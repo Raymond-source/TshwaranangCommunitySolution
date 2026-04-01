@@ -33,7 +33,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <!-- Favicon - using actual icon.ico -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/logo/icon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="images/logo/icon.ico" />
     <link rel="apple-touch-icon" href="images/logo/logo.png" />
@@ -83,9 +83,7 @@
       <!-- Hero Slideshow Section -->
       <section class="hero-slider">
         <div class="swiper heroSwiper">
-          <div class="swiper-wrapper" id="slideshowContainer">
-            <!-- Slides will be populated by JavaScript -->
-          </div>
+          <div class="swiper-wrapper" id="slideshowContainer"></div>
           <div class="swiper-pagination"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -140,9 +138,7 @@
             <h2>Our Core Values</h2>
             <p>The principles that guide everything we do</p>
           </div>
-          <div class="values-grid" id="valuesContainer">
-            <!-- Values will be populated by JavaScript -->
-          </div>
+          <div class="values-grid" id="valuesContainer"></div>
         </div>
       </section>
 
@@ -176,42 +172,119 @@
         </div>
       </section>
 
-      <!-- 1 Million HIV/TB Campaign -->
-      <section class="section-padding bg-light">
+      <!-- ==================== HEALTH CAMPAIGNS SECTION ==================== -->
+      <section class="section-padding health-campaigns-section">
         <div class="container">
           <div class="section-title">
-            <h2>1 Million HIV/TB Campaign</h2>
-            <p>
-              Reaching 1 Million People with HIV Prevention, Treatment & Care
-            </p>
+            <h2>Health Campaigns</h2>
+            <p>Driving wellness across Tshwane's taxi industry</p>
           </div>
-          <div class="campaign-grid">
-            <div class="campaign-card">
-              <i class="fas fa-chart-line"></i>
-              <h3>The Goal</h3>
-              <p>
-                To reach <strong>1 Million people</strong> across Tshwane with
-                comprehensive HIV and TB prevention, testing, treatment, and
-                care services.
-              </p>
+          <div class="health-campaigns-layout">
+            <div class="campaign-feature-image">
+              <img
+                src="images/pictures/health campaigns.png"
+                alt="Tshwaranang Health Campaigns - HIV/TB prevention and care"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://placehold.co/800x500/1a7b4a/white?text=Health+Campaigns';
+                "
+              />
             </div>
-            <div class="campaign-card">
-              <i class="fas fa-map-marker-alt"></i>
-              <h3>Focus Areas</h3>
-              <p>
-                Targeting Taxi Operators, Street Vendors, and daily commuters at
-                5 Major Taxi Ranks: Marabastad, Bosman, Bloedmall, Mabopane
-                Interchange, and Donneboom.
-              </p>
+            <div class="campaigns-content-grid">
+              <div class="campaign-highlight-card">
+                <i class="fas fa-people-arrows"></i>
+                <h3>1 Million HIV/TB Campaign</h3>
+                <p>
+                  Ambitious initiative reaching taxi operators, street vendors,
+                  and commuters with comprehensive prevention, testing, and
+                  linkage to care services across 5 major ranks.
+                </p>
+              </div>
+              <div class="campaign-highlight-card">
+                <i class="fas fa-hand-holding-medical"></i>
+                <h3>Stigma-Free Mobile Units</h3>
+                <p>
+                  Confidential wellness services delivered directly at taxi
+                  ranks, ensuring no driver or vendor is left behind in the
+                  fight against HIV and TB.
+                </p>
+              </div>
+              <div class="campaign-highlight-card">
+                <i class="fas fa-chalkboard-user"></i>
+                <h3>Health Education Drives</h3>
+                <p>
+                  Interactive workshops on prevention, treatment adherence, and
+                  healthy lifestyles tailored for the transport sector
+                  workforce.
+                </p>
+              </div>
+              <div class="campaign-highlight-card">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Quarterly Wellness Weeks</h3>
+                <p>
+                  Intensified screening, ART distribution, and TB symptom
+                  screening events in partnership with Department of Health and
+                  Wits RHI.
+                </p>
+              </div>
             </div>
-            <div class="campaign-card">
-              <i class="fas fa-hand-holding-heart"></i>
-              <h3>Our Approach</h3>
-              <p>
-                Stigma-free Health Education, immediate Linkage to Care, and
-                strategic partnerships to ensure our target groups are medically
-                fit to keep Tshwane growing.
-              </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TRANSFORMING LIVES SECTION ==================== -->
+      <section class="section-padding transforming-lives-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Transforming Lives</h2>
+            <p>Real impact stories & community upliftment</p>
+          </div>
+          <div class="transforming-lives-wrapper">
+            <div class="transforming-main-visual">
+              <img
+                src="images/pictures/transforming-lives.png"
+                alt="Transforming lives through healthcare and climate action"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://placehold.co/800x500/0e5a38/white?text=Transforming+Lives';
+                "
+              />
+            </div>
+            <div class="transforming-stories-grid">
+              <div class="story-card">
+                <div class="story-icon"><i class="fas fa-seedling"></i></div>
+                <h3>Greening Taxi Ranks</h3>
+                <p>
+                  Over 500 trees planted at major taxi ranks, improving air
+                  quality and creating cooling zones for commuters and vendors.
+                </p>
+              </div>
+              <div class="story-card">
+                <div class="story-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Economic Empowerment</h3>
+                <p>
+                  Skills training for 120+ street vendors in financial literacy
+                  and small business management, boosting household incomes.
+                </p>
+              </div>
+              <div class="story-card">
+                <div class="story-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3>HIV-Positive Drivers Support</h3>
+                <p>
+                  Peer support groups for taxi drivers living with HIV, ensuring
+                  treatment adherence and reducing stigma within the industry.
+                </p>
+              </div>
+              <div class="story-card">
+                <div class="story-icon"><i class="fas fa-tint"></i></div>
+                <h3>Clean Water Access</h3>
+                <p>
+                  Installation of water stations at 3 taxi ranks, providing free
+                  clean drinking water to 8,000+ daily commuters.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -246,7 +319,7 @@
               <h3>Climate Action</h3>
               <p>
                 Tree distribution for household yards to improve air pollution
-                and revive vegetable gardens for food security.
+                and revive vegetable gardens.
               </p>
             </div>
             <div class="service-card">
@@ -274,9 +347,7 @@
           </div>
           <div class="partners-slider-container">
             <div class="swiper partnersSwiper">
-              <div class="swiper-wrapper" id="partnersContainer">
-                <!-- Partners will be populated by JavaScript -->
-              </div>
+              <div class="swiper-wrapper" id="partnersContainer"></div>
               <div class="swiper-pagination partners-pagination"></div>
               <div class="swiper-button-next partners-next"></div>
               <div class="swiper-button-prev partners-prev"></div>
@@ -398,28 +469,23 @@
         <div class="modal-body">
           <div class="bank-details">
             <div class="bank-detail-item">
-              <strong>Bank Name:</strong>
-              <span>First National Bank (FNB)</span>
+              <strong>Bank Name:</strong><span>First National Bank (FNB)</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Account Holder:</strong>
-              <span>Tshwaranang Community Solution</span>
+              <strong>Account Holder:</strong
+              ><span>Tshwaranang Community Solution</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Account Number:</strong>
-              <span>631 982 834 93</span>
+              <strong>Account Number:</strong><span>631 982 834 93</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Branch Code:</strong>
-              <span>250655</span>
+              <strong>Branch Code:</strong><span>250655</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Account Type:</strong>
-              <span>Cheque Account</span>
+              <strong>Account Type:</strong><span>Cheque Account</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Reference:</strong>
-              <span>Donation - [Your Name]</span>
+              <strong>Reference:</strong><span>Donation - [Your Name]</span>
             </div>
           </div>
           <div class="donation-note">
@@ -443,14 +509,285 @@
     <script src="js/config.js"></script>
     <script src="js/script.js"></script>
 
+    <style>
+      /* Health Campaigns Section */
+      .health-campaigns-section {
+        background: linear-gradient(135deg, #f0f9f4 0%, #e6f3ec 100%);
+      }
+      .health-campaigns-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+      }
+      .campaign-feature-image {
+        border-radius: 32px;
+        overflow: hidden;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .campaign-feature-image:hover {
+        transform: scale(1.01);
+      }
+      .campaign-feature-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+      .campaigns-content-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      .campaign-highlight-card {
+        background: white;
+        border-radius: 24px;
+        padding: 1.5rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+      .campaign-highlight-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .campaign-highlight-card i {
+        font-size: 2.2rem;
+        color: #1a7b4a;
+        margin-bottom: 1rem;
+        display: inline-block;
+      }
+      .campaign-highlight-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+        color: #0e5a38;
+      }
+      .campaign-highlight-card p {
+        color: #4a5568;
+        line-height: 1.5;
+        font-size: 0.9rem;
+      }
+
+      /* Transforming Lives Section */
+      .transforming-lives-section {
+        background: linear-gradient(135deg, #fff9ef 0%, #fef5e6 100%);
+      }
+      .transforming-lives-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+      }
+      .transforming-main-visual {
+        border-radius: 32px;
+        overflow: hidden;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        order: 2;
+      }
+      .transforming-main-visual img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+      .transforming-stories-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      .story-card {
+        background: white;
+        border-radius: 24px;
+        padding: 1.5rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+      .story-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .story-icon i {
+        font-size: 2rem;
+        color: #ff8c42;
+        background: rgba(255, 140, 66, 0.1);
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 60px;
+        margin-bottom: 1rem;
+      }
+      .story-card h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.75rem;
+        color: #2d3748;
+      }
+      .story-card p {
+        color: #4a5568;
+        line-height: 1.5;
+        font-size: 0.9rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 992px) {
+        .health-campaigns-layout,
+        .transforming-lives-wrapper {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+        .transforming-main-visual {
+          order: 1;
+        }
+        .campaigns-content-grid,
+        .transforming-stories-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 640px) {
+        .campaigns-content-grid,
+        .transforming-stories-grid {
+          grid-template-columns: 1fr;
+        }
+        .campaign-highlight-card,
+        .story-card {
+          padding: 1.2rem;
+        }
+      }
+
+      /* Existing modal and partner styles kept */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 2000;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(5px);
+      }
+      .modal-content {
+        background: white;
+        border-radius: 24px;
+        max-width: 500px;
+        width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+        animation: modalSlideIn 0.3s ease;
+      }
+      @keyframes modalSlideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 25px;
+        background: linear-gradient(135deg, #1a7b4a, #0e5a38);
+        border-radius: 24px 24px 0 0;
+        color: white;
+      }
+      .close-modal {
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+      }
+      .modal-body {
+        padding: 25px;
+      }
+      .bank-details {
+        background: #f8f9fa;
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .bank-detail-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+      .btn-donate-nav {
+        background: linear-gradient(135deg, #ff8c42, #ff6b35);
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 50px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+      }
+      .partners-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      }
+      .partners-slider-container {
+        padding: 20px 40px;
+      }
+      .partner-card-slide {
+        background: white;
+        border-radius: 20px;
+        padding: 25px 20px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      }
+      .partner-logo {
+        width: 120px;
+        height: 100px;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .partner-logo img {
+        max-width: 100%;
+        max-height: 80px;
+        object-fit: contain;
+      }
+      .locations-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+      }
+      .location-card {
+        text-align: center;
+        padding: 1.8rem;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+      .campaign-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      @media (max-width: 768px) {
+        .partners-slider-container {
+          padding: 20px 10px;
+        }
+        .partner-logo {
+          width: 100px;
+          height: 80px;
+        }
+      }
+    </style>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // ========== DONATE MODAL ==========
         const navDonateBtn = document.getElementById("navDonateBtn");
         const modal = document.getElementById("bankDetailsModal");
         const closeModal = document.querySelector(".close-modal");
         const copyDetailsBtn = document.getElementById("copyDetailsBtn");
-
         function openDonateModal(e) {
           if (e) e.preventDefault();
           if (modal) {
@@ -458,7 +795,6 @@
             document.body.style.overflow = "hidden";
           }
         }
-
         if (navDonateBtn)
           navDonateBtn.addEventListener("click", openDonateModal);
         if (closeModal)
@@ -472,27 +808,22 @@
             document.body.style.overflow = "auto";
           }
         });
-
         if (copyDetailsBtn) {
           copyDetailsBtn.addEventListener("click", function () {
-            const bankDetailsText = `Bank Name: First National Bank (FNB)\nAccount Holder: Tshwaranang Community Solution\nAccount Number: 62838945678\nBranch Code: 250655\nAccount Type: Cheque Account\nReference: Donation - [Your Name]`;
+            const details = `Bank Name: First National Bank (FNB)\nAccount Holder: Tshwaranang Community Solution\nAccount Number: 63198283493\nBranch Code: 250655\nAccount Type: Cheque Account\nReference: Donation - [Your Name]`;
             navigator.clipboard
-              .writeText(bankDetailsText)
+              .writeText(details)
               .then(() => {
-                const originalText = copyDetailsBtn.innerHTML;
+                const orig = copyDetailsBtn.innerHTML;
                 copyDetailsBtn.innerHTML =
                   '<i class="fas fa-check"></i> Copied!';
                 setTimeout(() => {
-                  copyDetailsBtn.innerHTML = originalText;
+                  copyDetailsBtn.innerHTML = orig;
                 }, 2000);
               })
-              .catch(() =>
-                alert("Could not copy. Please manually copy the details."),
-              );
+              .catch(() => alert("Could not copy."));
           });
         }
-
-        // ========== PARTNERS SLIDESHOW ==========
         const partners = [
           {
             name: "DEKRA",
@@ -525,29 +856,15 @@
             description: "Gophelega Project Collaboration",
           },
         ];
-
         const partnersContainer = document.getElementById("partnersContainer");
         if (partnersContainer) {
           partnersContainer.innerHTML = partners
             .map(
-              (partner) => `
-                    <div class="swiper-slide partner-slide">
-                        <div class="partner-card-slide">
-                            <div class="partner-logo">
-                                <img src="${partner.logo}" alt="${partner.name} Logo" onerror="this.src='https://placehold.co/200x150/1a7b4a/white?text=${partner.name}'">
-                            </div>
-                            <div class="partner-info">
-                                <h3>${partner.name}</h3>
-                                <p>${partner.description}</p>
-                            </div>
-                        </div>
-                    </div>
-                `,
+              (p) =>
+                `<div class="swiper-slide partner-slide"><div class="partner-card-slide"><div class="partner-logo"><img src="${p.logo}" alt="${p.name}" onerror="this.src='https://placehold.co/200x150/1a7b4a/white?text=${p.name}'"></div><div class="partner-info"><h3>${p.name}</h3><p>${p.description}</p></div></div></div>`,
             )
             .join("");
         }
-
-        // Initialize Partners Swiper
         if (typeof Swiper !== "undefined") {
           new Swiper(".partnersSwiper", {
             slidesPerView: 1,
@@ -557,393 +874,15 @@
             pagination: { el: ".partners-pagination", clickable: true },
             navigation: { nextEl: ".partners-next", prevEl: ".partners-prev" },
             breakpoints: {
-              640: { slidesPerView: 2, spaceBetween: 20 },
-              768: { slidesPerView: 3, spaceBetween: 30 },
-              1024: { slidesPerView: 4, spaceBetween: 30 },
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
             },
           });
         }
+        document.getElementById("currentYear").innerText =
+          new Date().getFullYear();
       });
     </script>
-
-    <style>
-      /* Logo Styles */
-      .logo-image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .logo-img {
-        height: 50px;
-        width: auto;
-        max-width: 180px;
-        object-fit: contain;
-      }
-
-      @media (max-width: 768px) {
-        .logo-img {
-          height: 40px;
-        }
-      }
-
-      /* Navigation Donate Button */
-      .btn-donate-nav {
-        background: linear-gradient(135deg, #ff8c42, #ff6b35);
-        color: white;
-        border: none;
-        padding: 8px 20px;
-        border-radius: 50px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        transition: all 0.3s ease;
-        text-decoration: none;
-      }
-
-      .btn-donate-nav:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
-        color: white;
-      }
-
-      /* Partners Slideshow Styles */
-      .partners-section {
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-      }
-
-      .partners-slider-container {
-        position: relative;
-        padding: 20px 40px;
-      }
-
-      .partnersSwiper {
-        width: 100%;
-        padding: 20px 0 40px;
-      }
-
-      .partner-slide {
-        height: auto;
-        display: flex;
-      }
-
-      .partner-card-slide {
-        background: white;
-        border-radius: 20px;
-        padding: 25px 20px;
-        text-align: center;
-        box-shadow: var(--shadow);
-        transition: all 0.3s ease;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-      }
-
-      .partner-card-slide:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      }
-
-      .partner-logo {
-        width: 120px;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-
-      .partner-logo img {
-        max-width: 100%;
-        max-height: 80px;
-        object-fit: contain;
-        transition: transform 0.3s ease;
-      }
-
-      .partner-card-slide:hover .partner-logo img {
-        transform: scale(1.05);
-      }
-
-      .partner-info h3 {
-        font-size: 1.1rem;
-        color: var(--primary-dark);
-        margin-bottom: 0.5rem;
-      }
-
-      .partner-info p {
-        font-size: 0.85rem;
-        color: var(--gray);
-        margin: 0;
-      }
-
-      /* Partners Swiper Navigation */
-      .partners-next,
-      .partners-prev {
-        color: var(--primary);
-        background: white;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .partners-next:after,
-      .partners-prev:after {
-        font-size: 18px;
-        font-weight: bold;
-      }
-
-      .partners-next:hover,
-      .partners-prev:hover {
-        background: var(--primary);
-        color: white;
-      }
-
-      .partners-pagination {
-        bottom: 0;
-      }
-
-      .partners-pagination .swiper-pagination-bullet-active {
-        background: var(--primary);
-      }
-
-      /* Campaign Section */
-      .campaign-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-      }
-
-      .campaign-card {
-        background: white;
-        border-radius: 24px;
-        padding: 2rem;
-        text-align: center;
-        box-shadow: var(--shadow);
-        transition: var(--transition);
-      }
-
-      .campaign-card:hover {
-        transform: translateY(-5px);
-      }
-      .campaign-card i {
-        font-size: 3rem;
-        color: var(--primary);
-        margin-bottom: 1rem;
-      }
-      .campaign-card h3 {
-        font-size: 1.3rem;
-        color: var(--primary-dark);
-        margin-bottom: 1rem;
-      }
-      .campaign-card p {
-        color: var(--gray);
-        line-height: 1.7;
-      }
-      .campaign-card strong {
-        color: var(--primary);
-      }
-
-      /* Locations Grid */
-      .locations-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
-      }
-
-      .location-card {
-        text-align: center;
-        padding: 1.8rem;
-        background: white;
-        border-radius: 16px;
-        box-shadow: var(--shadow);
-        transition: var(--transition);
-      }
-
-      .location-card:hover {
-        transform: translateY(-5px);
-      }
-      .location-card i {
-        font-size: 2rem;
-        color: var(--primary);
-        margin-bottom: 1rem;
-      }
-      .location-card h3 {
-        color: var(--primary-dark);
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-      }
-      .location-card p {
-        color: var(--gray);
-        font-size: 0.9rem;
-      }
-
-      /* Modal Styles */
-      .modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        z-index: 2000;
-        align-items: center;
-        justify-content: center;
-        backdrop-filter: blur(5px);
-      }
-
-      .modal-content {
-        background: white;
-        border-radius: 24px;
-        max-width: 500px;
-        width: 90%;
-        max-height: 90vh;
-        overflow-y: auto;
-        animation: modalSlideIn 0.3s ease;
-      }
-
-      @keyframes modalSlideIn {
-        from {
-          opacity: 0;
-          transform: translateY(-30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .modal-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 25px;
-        border-bottom: 1px solid #e9ecef;
-        background: linear-gradient(135deg, #1a7b4a, #0e5a38);
-        border-radius: 24px 24px 0 0;
-        color: white;
-      }
-
-      .modal-header h3 {
-        margin: 0;
-        color: white;
-      }
-      .close-modal {
-        font-size: 28px;
-        cursor: pointer;
-        color: white;
-      }
-      .modal-body {
-        padding: 25px;
-      }
-
-      .bank-details {
-        background: #f8f9fa;
-        border-radius: 16px;
-        padding: 20px;
-        margin-bottom: 20px;
-      }
-
-      .bank-detail-item {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      }
-      .bank-detail-item:last-child {
-        border-bottom: none;
-      }
-      .bank-detail-item strong {
-        color: #0e5a38;
-      }
-      .bank-detail-item span {
-        color: #6c757d;
-      }
-
-      .donation-note {
-        background: rgba(26, 123, 74, 0.1);
-        border-radius: 12px;
-        padding: 15px;
-        display: flex;
-        gap: 12px;
-        margin-bottom: 20px;
-      }
-      .donation-note i {
-        font-size: 1.5rem;
-        color: #1a7b4a;
-      }
-      .donation-note p {
-        margin: 0;
-        font-size: 0.9rem;
-        color: #6c757d;
-        line-height: 1.5;
-      }
-
-      .modal-actions {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-      }
-      .modal-actions .btn {
-        flex: 1;
-        text-align: center;
-      }
-
-      @media (max-width: 768px) {
-        .campaign-grid {
-          grid-template-columns: 1fr;
-        }
-        .partners-slider-container {
-          padding: 20px 10px;
-        }
-        .partner-logo {
-          width: 100px;
-          height: 80px;
-        }
-        .partner-logo img {
-          max-height: 60px;
-        }
-        .partner-info h3 {
-          font-size: 1rem;
-        }
-        .partner-info p {
-          font-size: 0.75rem;
-        }
-        .partners-next,
-        .partners-prev {
-          width: 30px;
-          height: 30px;
-        }
-      }
-
-      @media (max-width: 576px) {
-        .locations-grid {
-          grid-template-columns: 1fr;
-        }
-        .modal-actions {
-          flex-direction: column;
-        }
-        .bank-detail-item {
-          flex-direction: column;
-          gap: 5px;
-        }
-        .partner-card-slide {
-          padding: 20px 15px;
-        }
-        .partner-logo {
-          width: 80px;
-          height: 70px;
-        }
-        .partner-logo img {
-          max-height: 50px;
-        }
-      }
-    </style>
   </body>
 </html>
