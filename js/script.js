@@ -50,13 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Initialize Slideshow
-  if (
-    document.querySelector(".hero-slider") &&
-    typeof initSlideshow !== "undefined"
-  ) {
-    initSlideshow();
-
+  // Initialize Hero Slideshow
+  if (document.querySelector(".hero-slider")) {
     setTimeout(() => {
       if (typeof Swiper !== "undefined") {
         new Swiper(".heroSwiper", {
@@ -76,6 +71,45 @@ document.addEventListener("DOMContentLoaded", function () {
           effect: "fade",
           fadeEffect: {
             crossFade: true,
+          },
+        });
+      }
+    }, 100);
+  }
+
+  // Initialize Partners Swiper
+  if (document.querySelector(".partnersSwiper")) {
+    setTimeout(() => {
+      if (typeof Swiper !== "undefined") {
+        new Swiper(".partnersSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".partners-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".partners-next",
+            prevEl: ".partners-prev",
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 25,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
           },
         });
       }
@@ -138,23 +172,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const whatsappFloat = document.getElementById("whatsapp-float");
   if (whatsappFloat && typeof getWhatsAppUrl !== "undefined") {
     whatsappFloat.innerHTML = `
-            <a href="${getWhatsAppUrl()}" target="_blank" class="whatsapp-float-link" aria-label="Chat on WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <div class="whatsapp-float-text">Chat with us</div>
-        `;
+      <a href="${getWhatsAppUrl()}" target="_blank" class="whatsapp-float-link" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <div class="whatsapp-float-text">Chat with us</div>
+    `;
   }
 
-  // Note: Contact form handler is now handled by the custom script in contact.html
-  // This prevents conflict with the modal confirmation
-
-  // Set active navigation based on current page (supports both index.html and home.html)
+  // Set active navigation based on current page
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
   const navItems = document.querySelectorAll(".nav-links a");
   navItems.forEach((item) => {
     const href = item.getAttribute("href");
-    // Skip donate button links
-    if (href === "#" || href === null) return;
+    // Skip donate button links and empty hrefs
+    if (href === "#" || href === null || href === "") return;
 
     // Check if the link matches the current page
     if (href === currentPage) {
@@ -175,6 +206,76 @@ document.addEventListener("DOMContentLoaded", function () {
     else {
       item.classList.remove("active");
     }
+  });
+
+  // Add smooth scrolling to anchor links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      if (targetId !== "#") {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }
+    });
+  });
+
+  // Add scroll effect to header
+  const header = document.getElementById("main-header");
+  if (header) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  }
+
+  // Initialize lazy loading for images
+  const images = document.querySelectorAll("img[data-src]");
+  const imageObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.getAttribute("data-src");
+          img.removeAttribute("data-src");
+          imageObserver.unobserve(img);
+        }
+      });
+    },
+    { rootMargin: "50px" },
+  );
+
+  images.forEach((img) => imageObserver.observe(img));
+
+  // Add form validation for contact forms
+  const contactForms = document.querySelectorAll(".contact-form form");
+  contactForms.forEach((form) => {
+    form.addEventListener("submit", function (e) {
+      const requiredFields = form.querySelectorAll("[required]");
+      let isValid = true;
+
+      requiredFields.forEach((field) => {
+        if (!field.value.trim()) {
+          isValid = false;
+          field.classList.add("error");
+        } else {
+          field.classList.remove("error");
+        }
+      });
+
+      if (!isValid) {
+        e.preventDefault();
+        alert("Please fill in all required fields.");
+      }
+    });
   });
 
   console.log("Tshwaranang Community Solution website initialized");
