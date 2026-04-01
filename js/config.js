@@ -135,6 +135,22 @@ const siteConfig = {
       image: "images/team/amanda-kubeka.png",
       alt: "Amanda Kubeka - Deputy Chairperson",
     },
+    {
+      name: "Thato Dingilizwe",
+      role: "Deputy Secretary",
+      shortBio: "Professional Nurse",
+      fullBio: `
+        <p><strong>Role:</strong> Deputy Secretary</p>
+        <p>Hold a Diploma in Nursing Science ( General, Psychiatry, Community) and Midwifery 2008.</p>
+        <p><strong>Expertise:</strong></p>
+        <ul>
+          <li>18 years of experience in Nursing.</li>
+          <li>Worked in both public and private health care.</li>
+        </ul>
+      `,
+      image: "images/team/thato-dingilizwe.png",
+      alt: "Thato Dingilizwe - Deputy Secretary",
+    },
   ],
 };
 
