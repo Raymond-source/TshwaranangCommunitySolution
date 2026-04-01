@@ -8,24 +8,83 @@ const siteConfig = {
   email: "info@tsharanang.org.za",
   address: "13303 Extension 13, Soshanguve South, Pretoria, 0152",
 
+  // Registration Details
+  registration: {
+    npoNumber: "333-527-NPO",
+    npcNumber: "2026/121811/08",
+    pboNumber: "930088793",
+    cdsNumber: "MAAA1697303",
+    taxNumber: "9248008287",
+    section22B: "Active",
+  },
+
   // Slideshow Images (update paths when images are available)
   slides: [
     {
       title: "Transforming Lives",
       subtitle: "HIV Prevention, Treatment & Care at Major Taxi Ranks",
-      bg: "https://picsum.photos/id/104/1600/600",
+      bg: "images/slideshow/slide1.jpg",
+      fallbackBg: "https://picsum.photos/id/104/1600/600",
     },
     {
       title: "1 Million HIV/TB Campaign",
       subtitle:
         "Reaching 1 Million People with HIV Prevention, Treatment & Care",
-      bg: "https://picsum.photos/id/15/1600/600",
+      bg: "images/slideshow/slide2.jpg",
+      fallbackBg: "https://picsum.photos/id/15/1600/600",
     },
     {
       title: "Health Hubs at Taxi Ranks",
       subtitle:
         "5 Major Locations: Marabastad, Bosman, Bloedmall, Mabopane, Donneboom",
-      bg: "https://picsum.photos/id/116/1600/600",
+      bg: "images/slideshow/slide3.jpg",
+      fallbackBg: "https://picsum.photos/id/116/1600/600",
+    },
+    {
+      title: "Climate Action Initiative",
+      subtitle: "Greening taxi ranks for a healthier environment",
+      bg: "images/slideshow/slide4.jpg",
+      fallbackBg: "https://picsum.photos/id/29/1600/600",
+    },
+  ],
+
+  // Strategic Partners Data
+  partners: [
+    {
+      name: "DEKRA",
+      logo: "images/partners/DEKRA.png",
+      description: "Online Roadworthy Booking Partner",
+      website: "https://www.dekra.co.za",
+    },
+    {
+      name: "Department of Transport",
+      logo: "images/partners/Department of Transport.png",
+      description: "Strategic Alliance",
+      website: "https://www.transport.gov.za",
+    },
+    {
+      name: "DTI",
+      logo: "images/partners/DTI.png",
+      description: "Strategic Business Support",
+      website: "https://www.dti.gov.za",
+    },
+    {
+      name: "RTMC",
+      logo: "images/partners/rtmc-logo.png",
+      description: "Road Traffic Management Corporation",
+      website: "https://www.rtmc.co.za",
+    },
+    {
+      name: "SANTACO",
+      logo: "images/partners/SANTACO.png",
+      description: "Gauteng PEC Partnership",
+      website: "https://www.santaco.co.za",
+    },
+    {
+      name: "Wits RHI",
+      logo: "images/partners/Wits RHI.png",
+      description: "Gophelega Project Collaboration",
+      website: "https://www.witsrhi.co.za",
     },
   ],
 
@@ -51,27 +110,99 @@ const siteConfig = {
       title: "Excellency",
       description: "Striving for the highest quality",
     },
+    {
+      icon: "fas fa-heart",
+      title: "Compassion",
+      description:
+        "We serve with empathy and genuine care for every individual",
+    },
+    {
+      icon: "fas fa-leaf",
+      title: "Sustainability",
+      description: "Creating lasting solutions for community well-being",
+    },
   ],
 
-  // Services List
+  // Services List with detailed descriptions
   services: [
-    "HTS (HIV Testing Services)",
-    "HIV Prevention",
-    "Treatment and Care",
-    "Online NaTIS Booking",
-    "Online Roadworthy Booking",
-    "Climate Change Education",
-    "Chronic Diagnosis and Treatment",
-    "Family Planning",
-    "Immunisation",
-    "Home Visit",
-    "M&E Training",
-    "QI Training",
-    "Basic Nursing Training",
-    "Acute and Minor Alignment Treatment",
+    {
+      name: "HIV Testing Services (HTS)",
+      description:
+        "Confidential and stigma-free HIV testing with immediate results",
+      icon: "fas fa-heartbeat",
+    },
+    {
+      name: "HIV Prevention",
+      description:
+        "Comprehensive prevention services including PrEP and condom distribution",
+      icon: "fas fa-hand-holding-heart",
+    },
+    {
+      name: "Treatment and Care",
+      description:
+        "ART initiation, adherence support, and ongoing medical care",
+      icon: "fas fa-stethoscope",
+    },
+    {
+      name: "Online NaTIS Booking",
+      description: "Convenient online booking for NaTIS services",
+      icon: "fas fa-car",
+    },
+    {
+      name: "Online Roadworthy Booking",
+      description: "Quick and easy roadworthy test bookings",
+      icon: "fas fa-clipboard-list",
+    },
+    {
+      name: "Climate Change Education",
+      description:
+        "Workshops and training on climate action and environmental sustainability",
+      icon: "fas fa-leaf",
+    },
+    {
+      name: "Chronic Diagnosis & Treatment",
+      description:
+        "Management of chronic conditions including hypertension and diabetes",
+      icon: "fas fa-chart-line",
+    },
+    {
+      name: "Family Planning",
+      description: "Comprehensive family planning services and counseling",
+      icon: "fas fa-female",
+    },
+    {
+      name: "Immunisation",
+      description: "Vaccination services for children and adults",
+      icon: "fas fa-syringe",
+    },
+    {
+      name: "Home Visit",
+      description: "Outreach services for homebound community members",
+      icon: "fas fa-home",
+    },
+    {
+      name: "M&E Training",
+      description: "Monitoring and Evaluation training for healthcare workers",
+      icon: "fas fa-chalkboard-teacher",
+    },
+    {
+      name: "QI Training",
+      description: "Quality Improvement training for better service delivery",
+      icon: "fas fa-chart-bar",
+    },
+    {
+      name: "Basic Nursing Training",
+      description: "Foundational nursing skills development",
+      icon: "fas fa-user-md",
+    },
+    {
+      name: "Acute & Minor Alignment",
+      description: "Treatment for acute conditions and minor injuries",
+      icon: "fas fa-briefcase-medical",
+    },
   ],
 
-  // Team Members with PNG images and detailed bios for modal (ordered by position)
+  // Team Members with PNG images and detailed bios
   team: [
     {
       name: "Mr Xolani Nkosi",
@@ -82,7 +213,7 @@ const siteConfig = {
         <p><strong>Education:</strong> BA Psychology (1997-1999)</p>
         <p><strong>Experience:</strong></p>
         <ul>
-          <li>Theuraptic Counselor - Implementation of PMTCT (2002-2006) at Amajuba District Department of Health KZN</li>
+          <li>Therapeutic Counselor - Implementation of PMTCT (2002-2006) at Amajuba District Department of Health KZN</li>
           <li>HIV in Workplace SMME Project Supervisor at The Aurum (2007-2010)</li>
           <li>Gene-Expert Research Assistant Supervisor at The Aurum (Helen Joseph) (2011-2012)</li>
           <li>Tier Implementer at Dr Kenneth Kaunda District Wits RHI (2013-2015)</li>
@@ -93,6 +224,7 @@ const siteConfig = {
       `,
       image: "images/team/xolani-nkosi.png",
       alt: "Mr Xolani Nkosi - Secretary, Founder & Director",
+      order: 1,
     },
     {
       name: "Phumi Phogole",
@@ -115,6 +247,7 @@ const siteConfig = {
       `,
       image: "images/team/phumi-phogole.png",
       alt: "Phumi Phogole - Chairperson & Co-founder",
+      order: 2,
     },
     {
       name: "Amanda Kubeka",
@@ -134,22 +267,98 @@ const siteConfig = {
       `,
       image: "images/team/amanda-kubeka.png",
       alt: "Amanda Kubeka - Deputy Chairperson",
+      order: 3,
     },
     {
       name: "Thato Dingilizwe",
       role: "Deputy Secretary",
-      shortBio: "Professional Nurse",
+      shortBio: "Professional Nurse with 18 years experience",
       fullBio: `
         <p><strong>Role:</strong> Deputy Secretary</p>
-        <p>Hold a Diploma in Nursing Science ( General, Psychiatry, Community) and Midwifery 2008.</p>
+        <p>Hold a Diploma in Nursing Science (General, Psychiatry, Community) and Midwifery 2008.</p>
         <p><strong>Expertise:</strong></p>
         <ul>
-          <li>18 years of experience in Nursing.</li>
-          <li>Worked in both public and private health care.</li>
+          <li>18 years of experience in Nursing</li>
+          <li>Worked in both public and private healthcare sectors</li>
+          <li>Specialized in community health and patient care</li>
         </ul>
       `,
       image: "images/team/thato-dingilizwe.png",
       alt: "Thato Dingilizwe - Deputy Secretary",
+      order: 4,
+    },
+    {
+      name: "Nail Makgalatiba",
+      role: "Deputy Treasury",
+      shortBio: "Financial Management Specialist",
+      fullBio: `
+        <p><strong>Role:</strong> Deputy Treasury</p>
+        <p><strong>Qualifications:</strong> Financial Management and Accounting</p>
+        <p><strong>Expertise:</strong></p>
+        <ul>
+          <li>Financial Planning and Analysis</li>
+          <li>Budget Management</li>
+          <li>NPO Financial Compliance</li>
+          <li>Grant Management and Reporting</li>
+        </ul>
+      `,
+      image: "images/team/nail-makgalatiba.png",
+      alt: "Nail Makgalatiba - Deputy Treasury",
+      order: 5,
+    },
+  ],
+
+  // Health Hub Locations
+  healthHubs: [
+    {
+      name: "Marabastad Taxi Rank",
+      address: "Marabastad, Pretoria",
+      status: "Active",
+    },
+    {
+      name: "Bosman Taxi Rank",
+      address: "Bosman Street, Pretoria CBD",
+      status: "Active",
+    },
+    {
+      name: "Bloedmall Taxi Rank",
+      address: "Bloed Street, Pretoria",
+      status: "Active",
+    },
+    {
+      name: "Mabopane Interchange",
+      address: "Mabopane, Pretoria",
+      status: "Active",
+    },
+    {
+      name: "Donneboom Taxi Rank",
+      address: "Donneboom, Pretoria",
+      status: "Active",
+    },
+  ],
+
+  // Campaign Statistics
+  stats: [
+    {
+      icon: "fas fa-users",
+      number: 15000,
+      label: "Taxi Operators in Tshwane",
+    },
+    {
+      icon: "fas fa-bus",
+      number: 121000,
+      label: "Daily Commuters",
+    },
+    {
+      icon: "fas fa-heartbeat",
+      number: 1000000,
+      label: "Health Campaigns",
+      suffix: "+",
+    },
+    {
+      icon: "fas fa-hospital-user",
+      number: 5,
+      label: "Major Taxi Ranks",
     },
   ],
 };
@@ -157,11 +366,40 @@ const siteConfig = {
 // WhatsApp URL
 function getWhatsAppUrl() {
   const message =
-    "Hello Tshwaranang Community Solution, I'd like more information about your services.";
+    "Hello Tshwaranang Community Solution, I'd like more information about your services and how I can get involved.";
   return `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 
-// Initialize slideshow
+// Render Partners with enhanced styling and error handling
+function renderPartners(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.innerHTML = siteConfig.partners
+    .map(
+      (partner) => `
+        <div class="swiper-slide partner-slide">
+          <div class="partner-card-slide">
+            <div class="partner-logo">
+              <img 
+                src="${partner.logo}" 
+                alt="${partner.name}" 
+                onerror="this.src='https://placehold.co/200x150/1a7b4a/white?text=${encodeURIComponent(partner.name)}'"
+              >
+            </div>
+            <div class="partner-info">
+              <h3>${partner.name}</h3>
+              <p>${partner.description}</p>
+              ${partner.website ? `<a href="${partner.website}" target="_blank" rel="noopener noreferrer" class="partner-link">Visit Website <i class="fas fa-external-link-alt"></i></a>` : ""}
+            </div>
+          </div>
+        </div>
+      `,
+    )
+    .join("");
+}
+
+// Initialize slideshow with fallback images
 function initSlideshow() {
   const container = document.getElementById("slideshowContainer");
   if (!container) return;
@@ -169,13 +407,13 @@ function initSlideshow() {
   container.innerHTML = siteConfig.slides
     .map(
       (slide) => `
-        <div class="swiper-slide" style="background-image: url('${slide.bg}')">
-            <div class="slide-overlay">
-                <h2>${slide.title}</h2>
-                <p>${slide.subtitle}</p>
-            </div>
+        <div class="swiper-slide" style="background-image: url('${slide.bg}'), url('${slide.fallbackBg}')">
+          <div class="slide-overlay">
+            <h2>${slide.title}</h2>
+            <p>${slide.subtitle}</p>
+          </div>
         </div>
-    `,
+      `,
     )
     .join("");
 }
@@ -189,16 +427,16 @@ function renderValues(containerId) {
     .map(
       (value) => `
         <div class="value-card">
-            <i class="${value.icon}"></i>
-            <h3>${value.title}</h3>
-            <p>${value.description}</p>
+          <i class="${value.icon}"></i>
+          <h3>${value.title}</h3>
+          <p>${value.description}</p>
         </div>
-    `,
+      `,
     )
     .join("");
 }
 
-// Render services
+// Render services with icons
 function renderServices(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -207,13 +445,13 @@ function renderServices(containerId) {
     .map(
       (service) => `
         <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-check-circle"></i>
-            </div>
-            <h3>${service}</h3>
-            <p>Professional, stigma-free service delivery.</p>
+          <div class="service-icon">
+            <i class="${service.icon}"></i>
+          </div>
+          <h3>${service.name}</h3>
+          <p>${service.description}</p>
         </div>
-    `,
+      `,
     )
     .join("");
 }
@@ -223,23 +461,83 @@ function renderTeam(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  container.innerHTML = siteConfig.team
+  // Sort team by order
+  const sortedTeam = [...siteConfig.team].sort((a, b) => a.order - b.order);
+
+  container.innerHTML = sortedTeam
     .map(
       (member, index) => `
         <div class="team-member" data-member-index="${index}">
-            <div class="member-img">
-                <img src="${member.image}" alt="${member.alt}" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\\'fas fa-user-circle\\' style=\\'font-size: 5rem; color: var(--primary);\\'></i>';">
-            </div>
-            <div class="member-info">
-                <h4>${member.name}</h4>
-                <p class="role">${member.role}</p>
-                <div class="short-bio">${member.shortBio}</div>
-                <button class="btn-view-bio" data-member="${index}">
-                    <i class="fas fa-info-circle"></i> View Full Bio
-                </button>
-            </div>
+          <div class="member-img">
+            <img 
+              src="${member.image}" 
+              alt="${member.alt}" 
+              loading="lazy"
+              onerror="this.onerror=null; this.src='https://placehold.co/400x300/1a7b4a/white?text=${encodeURIComponent(member.name)}'"
+            >
+          </div>
+          <div class="member-info">
+            <h4>${member.name}</h4>
+            <p class="role">${member.role}</p>
+            ${member.shortBio ? `<div class="short-bio">${member.shortBio}</div>` : ""}
+            <button class="btn-view-bio" data-member="${index}">
+              <i class="fas fa-info-circle"></i> View Full Bio
+            </button>
+          </div>
         </div>
-    `,
+      `,
     )
     .join("");
+}
+
+// Render health hub locations
+function renderHealthHubs(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.innerHTML = siteConfig.healthHubs
+    .map(
+      (hub) => `
+        <div class="location-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>${hub.name}</h3>
+          <p>${hub.address}</p>
+          <span class="hub-status ${hub.status.toLowerCase()}">${hub.status}</span>
+        </div>
+      `,
+    )
+    .join("");
+}
+
+// Render stats with animation support
+function renderStats(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.innerHTML = siteConfig.stats
+    .map(
+      (stat) => `
+        <div class="stat-card">
+          <i class="${stat.icon}"></i>
+          <h3><span class="stat-number" data-target="${stat.number}">0</span>${stat.suffix || ""}</h3>
+          <p>${stat.label}</p>
+        </div>
+      `,
+    )
+    .join("");
+}
+
+// Export for use in other files
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    siteConfig,
+    getWhatsAppUrl,
+    renderPartners,
+    initSlideshow,
+    renderValues,
+    renderServices,
+    renderTeam,
+    renderHealthHubs,
+    renderStats,
+  };
 }
