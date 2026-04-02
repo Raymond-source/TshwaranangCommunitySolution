@@ -207,8 +207,7 @@ const siteConfig = {
     {
       name: "Mr Xolani Nkosi",
       role: "Secretary, Founder & Director",
-      shortBio:
-        "BA Psychology | PMTCT Specialist | Strategic Information Project Manager",
+      shortBio: "BA Psychology | Strategic Information Project Manager",
       fullBio: `
         <p><strong>Education:</strong> BA Psychology (1997-1999)</p>
         <p><strong>Experience:</strong></p>
@@ -251,11 +250,11 @@ const siteConfig = {
     },
     {
       name: "Amanda Kubeka",
-      role: "Deputy Chairperson& & Director",
-      shortBio: "Community Mobilization & Outreach Expert",
+      role: "Deputy Chairperson & Director",
+      shortBio: "Quality Improvement Specialist",
       fullBio: `
         <p><strong>Role:</strong> Deputy Chairperson</p>
-        <p>Amanda Kubeka is a dedicated Community Mobilization & Outreach Expert with extensive experience in grassroots engagement. She specializes in building strong community connections and ensuring that health services reach the most underserved populations.</p>
+        <p>Amanda Kubeka is a dedicated Quality Improvement Specialist with extensive experience in grassroots engagement. She specializes in building strong community connections and ensuring that health services reach the most underserved populations.</p>
         <p><strong>Expertise:</strong></p>
         <ul>
           <li>Community Outreach and Engagement</li>
@@ -270,8 +269,8 @@ const siteConfig = {
       order: 3,
     },
     {
-      name: "Thato Dingilizwe & Director",
-      role: "Deputy Secretary",
+      name: "Thato Dingilizwe",
+      role: "Deputy Secretary & Director",
       shortBio: "Professional Nurse with 18 years experience",
       fullBio: `
         <p><strong>Role:</strong> Deputy Secretary</p>
@@ -288,9 +287,9 @@ const siteConfig = {
       order: 4,
     },
     {
-      name: "Nai Makgalatiba & Director",
-      role: "Deputy Treasury",
-      shortBio: "Financial Management Specialist",
+      name: "Nai Makgalatiba",
+      role: "Deputy Treasury and Director ",
+      shortBio: "Professional Nurse",
       fullBio: `
         <p><strong>Role:</strong> Deputy Treasury</p>
         <p><strong>Qualifications:</strong> Financial Management and Accounting</p>
