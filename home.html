@@ -837,6 +837,11 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        // ===== FIX: Initialize the hero slideshow =====
+        if (typeof initSlideshow !== "undefined") {
+          initSlideshow(); // ← ADDED - This loads your slide images
+        }
+
         const navDonateBtn = document.getElementById("navDonateBtn");
         const modal = document.getElementById("bankDetailsModal");
         const closeModal = document.querySelector(".close-modal");
@@ -932,6 +937,23 @@
               1024: { slidesPerView: 4 },
             },
           });
+
+          // ===== FIX: Initialize the hero swiper AFTER slides are loaded =====
+          setTimeout(function () {
+            if (document.querySelector(".heroSwiper")) {
+              new Swiper(".heroSwiper", {
+                loop: true,
+                autoplay: { delay: 5000, disableOnInteraction: false },
+                pagination: { el: ".swiper-pagination", clickable: true },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+                effect: "fade",
+                fadeEffect: { crossFade: true },
+              });
+            }
+          }, 200); // ← ADDED - This starts the slideshow
         }
         document.getElementById("currentYear").innerText =
           new Date().getFullYear();
