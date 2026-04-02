@@ -3,8 +3,8 @@
 const siteConfig = {
   companyName: "Tshwaranang Community Solution",
   tagline: "DRIVE for Success",
-  whatsappNumber: "27655634365",
-  phoneNumber: "0655634365",
+  whatsappNumber: "27767354237",
+  phoneNumber: "+27 76 735 4237",
   email: "info@tshwaranang.org.za",
   address: "13303 Extension 13, Soshanguve South, Pretoria, 0152",
 
