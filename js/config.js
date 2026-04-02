@@ -23,27 +23,27 @@ const siteConfig = {
     {
       title: "Transforming Lives",
       subtitle: "HIV Prevention, Treatment & Care at Major Taxi Ranks",
-      bg: "images/slideshow/slide1.jpg",
+      bg: "images/slides/slide1.png",
       fallbackBg: "https://picsum.photos/id/104/1600/600",
     },
     {
       title: "1 Million HIV/TB Campaign",
       subtitle:
         "Reaching 1 Million People with HIV Prevention, Treatment & Care",
-      bg: "images/slideshow/slide2.jpg",
+      bg: "images/slides/slide2.png",
       fallbackBg: "https://picsum.photos/id/15/1600/600",
     },
     {
       title: "Health Hubs at Taxi Ranks",
       subtitle:
         "5 Major Locations: Marabastad, Bosman, Bloedmall, Mabopane, Donneboom",
-      bg: "images/slideshow/slide3.jpg",
+      bg: "images/slides/slide3.png",
       fallbackBg: "https://picsum.photos/id/116/1600/600",
     },
     {
       title: "Climate Action Initiative",
       subtitle: "Greening taxi ranks for a healthier environment",
-      bg: "images/slideshow/slide4.jpg",
+      bg: "images/slides/slide4.png",
       fallbackBg: "https://picsum.photos/id/29/1600/600",
     },
   ],
