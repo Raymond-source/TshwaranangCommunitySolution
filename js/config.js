@@ -5,7 +5,7 @@ const siteConfig = {
   tagline: "DRIVE for Success",
   whatsappNumber: "27655634365",
   phoneNumber: "0655634365",
-  email: "info@tsharanang.org.za",
+  email: "info@tshwaranang.org.za",
   address: "13303 Extension 13, Soshanguve South, Pretoria, 0152",
 
   // Registration Details
@@ -251,7 +251,7 @@ const siteConfig = {
     },
     {
       name: "Amanda Kubeka",
-      role: "Deputy Chairperson",
+      role: "Deputy Chairperson& & Director",
       shortBio: "Community Mobilization & Outreach Expert",
       fullBio: `
         <p><strong>Role:</strong> Deputy Chairperson</p>
@@ -270,7 +270,7 @@ const siteConfig = {
       order: 3,
     },
     {
-      name: "Thato Dingilizwe",
+      name: "Thato Dingilizwe & Director",
       role: "Deputy Secretary",
       shortBio: "Professional Nurse with 18 years experience",
       fullBio: `
@@ -288,7 +288,7 @@ const siteConfig = {
       order: 4,
     },
     {
-      name: "Nail Makgalatiba",
+      name: "Nai Makgalatiba & Director",
       role: "Deputy Treasury",
       shortBio: "Financial Management Specialist",
       fullBio: `
