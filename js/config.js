@@ -227,7 +227,7 @@ const siteConfig = {
     },
     {
       name: "Phumi Phogole",
-      role: "Chairperson & Co-founder",
+      role: "Chairperson, Co-founder & Director",
       shortBio:
         "Professional Nurse | Founder & CEO Phomelelong Wellness Clinic",
       fullBio: `
