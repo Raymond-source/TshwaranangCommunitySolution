@@ -109,14 +109,17 @@
                   <p>
                     Xolani Nkosi: <a href="tel:+27655634365">065 563 4365</a>
                   </p>
-                  <p>Phumi Phogole: Available upon request</p>
+                  <p>Phumi Phogole: <a href="tel:+27767354237">076 735 4237</a></p>
                 </div>
               </div>
 
               <div class="info-item">
                 <i class="fas fa-envelope"></i>
                 <div>
-                 
+                  <h3>Email</h3>
+                  <p>
+                    <a href="mailto:info@tshwaranang.org.za">info@tshwaranang.org.za</a>
+                  </p>
                 </div>
               </div>
 
@@ -130,19 +133,33 @@
                 </div>
               </div>
 
+              <!-- Social Media Links -->
+              <div class="info-item">
+                <i class="fas fa-share-alt"></i>
+                <div>
+                  <h3>Follow Us</h3>
+                  <div class="social-links">
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+
               <!-- Donate Button -->
               <div class="donate-section">
                 <button class="btn-donate" id="donateBtn">
                   <i class="fas fa-hand-holding-heart"></i> Support Our Cause
                 </button>
               </div>
-
-             
+            </div>
 
             <!-- Contact Form Column -->
             <div class="contact-form">
               <h2>Send Us a Message</h2>
-              <form id="contactForm" data-custom-handler="true">
+              <div id="formStatus" class="form-status" style="display: none;"></div>
+              <form id="contactForm">
                 <div class="form-group">
                   <input
                     type="text"
@@ -205,7 +222,7 @@
         </div>
       </section>
 
-      <!-- Map Section - Fixed with working Google Maps embed -->
+      <!-- Map Section -->
       <section class="section-padding bg-light">
         <div class="container">
           <div class="section-title">
@@ -215,7 +232,7 @@
           <div class="map-container">
             <div class="map-embed">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115153.89858441822!2d27.94062953195109!3d-25.586323756942868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfcff23f681b71%3A0xa08fab73ca87bbdc!2sPhomelelong%20Wellness%20Clinic!5e0!3m2!1sen!2sza!4v1774944135009!5m2!1sen!2sza"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1q115153.89858441822!2d27.94062953195109!3d-25.586323756942868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfcff23f681b71%3A0xa08fab73ca87bbdc!2sPhomelelong%20Wellness%20Clinic!5e0!3m2!1sen!2sza!4v1774944135009!5m2!1sen!2sza"
                 width="100%"
                 height="400"
                 style="border: 0; border-radius: 16px"
@@ -304,7 +321,7 @@
               <li>
                 <i class="fas fa-phone-alt"></i> Phumi Phogole: 076 735 4237
               </li>
-             
+              <li><i class="fas fa-envelope"></i> info@tshwaranang.org.za</li>
             </ul>
           </div>
         </div>
@@ -390,182 +407,13 @@
       </div>
     </div>
 
-    <script src="js/config.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Donate Modal - for all donate buttons
-        const donateBtn = document.getElementById("donateBtn");
-        const navDonateBtn = document.getElementById("navDonateBtn");
-        const ctaDonateBtn = document.getElementById("ctaDonateBtn");
-        const modal = document.getElementById("bankDetailsModal");
-        const closeModal = document.querySelector(".close-modal");
-        const copyDetailsBtn = document.getElementById("copyDetailsBtn");
-
-        function openDonateModal(e) {
-          if (e) e.preventDefault();
-          if (modal) {
-            modal.style.display = "flex";
-            document.body.style.overflow = "hidden";
-          }
-        }
-
-        if (donateBtn) donateBtn.addEventListener("click", openDonateModal);
-        if (navDonateBtn)
-          navDonateBtn.addEventListener("click", openDonateModal);
-        if (ctaDonateBtn)
-          ctaDonateBtn.addEventListener("click", openDonateModal);
-
-        if (closeModal)
-          closeModal.addEventListener("click", function () {
-            modal.style.display = "none";
-            document.body.style.overflow = "auto";
-          });
-
-        window.addEventListener("click", function (e) {
-          if (e.target === modal) {
-            modal.style.display = "none";
-            document.body.style.overflow = "auto";
-          }
-        });
-
-        if (copyDetailsBtn) {
-          copyDetailsBtn.addEventListener("click", function () {
-            const bankDetailsText = `Bank Name: First National Bank (FNB)\nAccount Holder: Tshwaranang Community Solution\nAccount Number: 62838945678\nBranch Code: 250655\nAccount Type: Cheque Account\nReference: Donation - [Your Name]`;
-            navigator.clipboard
-              .writeText(bankDetailsText)
-              .then(() => {
-                const originalText = copyDetailsBtn.innerHTML;
-                copyDetailsBtn.innerHTML =
-                  '<i class="fas fa-check"></i> Copied!';
-                setTimeout(() => {
-                  copyDetailsBtn.innerHTML = originalText;
-                }, 2000);
-              })
-              .catch(() =>
-                alert("Could not copy. Please manually copy the details."),
-              );
-          });
-        }
-
-        // Contact Form Handler
-        setTimeout(function () {
-          const contactForm = document.getElementById("contactForm");
-          if (contactForm) {
-            const newForm = contactForm.cloneNode(true);
-            contactForm.parentNode.replaceChild(newForm, contactForm);
-            const finalForm = document.getElementById("contactForm");
-            const submitBtn = document.getElementById("submitBtn");
-
-            finalForm.addEventListener("submit", function (e) {
-              e.preventDefault();
-              e.stopPropagation();
-
-              const name = document.getElementById("formName")?.value.trim();
-              const email = document.getElementById("formEmail")?.value.trim();
-              const message = document
-                .getElementById("formMessage")
-                ?.value.trim();
-              const inquiry = document.getElementById("formInquiry")?.value;
-              const consent = document.getElementById("consent")?.checked;
-
-              if (!name || !email || !message || !inquiry) {
-                alert("Please fill in all required fields.");
-                return false;
-              }
-              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-              if (!emailRegex.test(email)) {
-                alert("Please enter a valid email address.");
-                return false;
-              }
-              if (!consent) {
-                alert(
-                  "Please consent to our POPIA privacy policy to submit the form.",
-                );
-                return false;
-              }
-
-              if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.innerHTML =
-                  '<i class="fas fa-spinner fa-spin"></i> Sending...';
-              }
-
-              setTimeout(() => {
-                const reference = Math.floor(Math.random() * 100000);
-                showConfirmationModal(name, reference);
-                finalForm.reset();
-                if (submitBtn) {
-                  submitBtn.disabled = false;
-                  submitBtn.innerHTML =
-                    '<i class="fas fa-paper-plane"></i> Send Message';
-                }
-              }, 1000);
-              return false;
-            });
-          }
-        }, 100);
-
-        function showConfirmationModal(name, reference) {
-          const modalBody = document.getElementById("confirmationModalBody");
-          if (modalBody) {
-            modalBody.innerHTML = `
-                        <div class="confirmation-message">
-                            <i class="fas fa-check-circle" style="font-size: 4rem; color: #00c99c; margin-bottom: 1rem;"></i>
-                            <h3>Thank You, ${escapeHtml(name)}!</h3>
-                            <p>Your message has been received successfully. We'll get back to you within 24 hours.</p>
-                            <div class="popia-notice">
-                                <i class="fas fa-shield-alt"></i>
-                                <p><strong>POPIA Compliance Notice:</strong></p>
-                                <ul>
-                                    <li>Your personal information will only be used to respond to your inquiry</li>
-                                    <li>Your data will not be shared with third parties without your consent</li>
-                                    <li>You may request access to or deletion of your data at any time</li>
-                                </ul>
-                                <p class="reference-note"><strong>Reference:</strong> #${reference}</p>
-                            </div>
-                        </div>
-                    `;
-          }
-          const confirmationModal =
-            document.getElementById("confirmationModal");
-          if (confirmationModal) {
-            confirmationModal.style.display = "flex";
-            document.body.style.overflow = "hidden";
-          }
-        }
-
-        function escapeHtml(text) {
-          const div = document.createElement("div");
-          div.textContent = text;
-          return div.innerHTML;
-        }
-
-        const closeConfirmation = document.querySelector(".close-confirmation");
-        const closeConfirmationBtn = document.querySelector(
-          ".close-confirmation-btn",
-        );
-        const confirmationModal = document.getElementById("confirmationModal");
-
-        function closeConfirmationModal() {
-          if (confirmationModal) {
-            confirmationModal.style.display = "none";
-            document.body.style.overflow = "auto";
-          }
-        }
-
-        if (closeConfirmation)
-          closeConfirmation.addEventListener("click", closeConfirmationModal);
-        if (closeConfirmationBtn)
-          closeConfirmationBtn.addEventListener(
-            "click",
-            closeConfirmationModal,
-          );
-        window.addEventListener("click", function (e) {
-          if (e.target === confirmationModal) closeConfirmationModal();
-        });
-      });
-    </script>
+    <!-- Loading Modal -->
+    <div id="loadingModal" class="modal loading-modal">
+      <div class="modal-content loading-content">
+        <div class="loading-spinner"></div>
+        <p>Sending your message...</p>
+      </div>
+    </div>
 
     <style>
       .btn-donate-nav {
@@ -614,6 +462,30 @@
 
       .info-item a:hover {
         color: #1a7b4a !important;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 12px;
+        margin-top: 8px;
+      }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background: #f0f0f0;
+        border-radius: 50%;
+        color: #1a7b4a;
+        transition: all 0.3s ease;
+      }
+
+      .social-link:hover {
+        background: #1a7b4a;
+        color: white;
+        transform: translateY(-3px);
       }
 
       .donate-section {
@@ -847,6 +719,45 @@
         padding: 0 25px 25px 25px;
       }
 
+      /* Loading Modal */
+      .loading-content {
+        text-align: center;
+        padding: 30px;
+        max-width: 300px;
+      }
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #e9ecef;
+        border-top-color: #1a7b4a;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 20px;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      /* Form Status */
+      .form-status {
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .form-status.success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+      .form-status.error {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+
       @media (max-width: 992px) {
         .contact-grid {
           grid-template-columns: 1fr;
@@ -878,5 +789,283 @@
         }
       }
     </style>
+
+    <script>
+      // API Configuration
+      const API_URL = window.location.hostname === 'localhost' 
+        ? 'http://localhost:5000/api' 
+ : 'https://your-backend-url.com/api';
+
+      // Set current year in footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      }
+
+      // Donate Modal functionality
+      const donateBtn = document.getElementById('donateBtn');
+      const navDonateBtn = document.getElementById('navDonateBtn');
+      const ctaDonateBtn = document.getElementById('ctaDonateBtn');
+      const modal = document.getElementById('bankDetailsModal');
+      const closeModal = document.querySelector('.close-modal');
+      const copyDetailsBtn = document.getElementById('copyDetailsBtn');
+
+      function openDonateModal(e) {
+        if (e) e.preventDefault();
+        if (modal) {
+          modal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      if (donateBtn) donateBtn.addEventListener('click', openDonateModal);
+      if (navDonateBtn) navDonateBtn.addEventListener('click', openDonateModal);
+      if (ctaDonateBtn) ctaDonateBtn.addEventListener('click', openDonateModal);
+
+      if (closeModal) {
+        closeModal.addEventListener('click', function() {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        });
+      }
+
+      window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
+
+      // Copy bank details
+      if (copyDetailsBtn) {
+        copyDetailsBtn.addEventListener('click', function() {
+          const bankDetailsText = `Bank Name: First National Bank (FNB)\nAccount Holder: Tshwaranang Community Solution\nAccount Number: 631 982 834 93\nBranch Code: 250655\nAccount Type: Cheque Account\nReference: Donation - [Your Name]`;
+          navigator.clipboard.writeText(bankDetailsText).then(() => {
+            const originalText = copyDetailsBtn.innerHTML;
+            copyDetailsBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            setTimeout(() => {
+              copyDetailsBtn.innerHTML = originalText;
+            }, 2000);
+          }).catch(() => {
+            alert('Could not copy. Please manually copy the details.');
+          });
+        });
+      }
+
+      // WhatsApp Float Widget
+      const whatsappFloat = document.getElementById('whatsapp-float');
+      if (whatsappFloat) {
+        whatsappFloat.innerHTML = `
+          <a href="https://wa.me/27767354237" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+            <span class="whatsapp-text">Chat with us</span>
+          </a>
+        `;
+      }
+
+      // Contact Form Handler with API integration
+      const contactForm = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const loadingModal = document.getElementById('loadingModal');
+      const confirmationModal = document.getElementById('confirmationModal');
+      const formStatus = document.getElementById('formStatus');
+
+      function showLoading(show) {
+        if (loadingModal) {
+          if (show) {
+            loadingModal.style.display = 'flex';
+          } else {
+            loadingModal.style.display = 'none';
+          }
+        }
+      }
+
+      function showFormStatus(message, type) {
+        if (formStatus) {
+          formStatus.style.display = 'flex';
+          formStatus.className = `form-status ${type}`;
+          formStatus.innerHTML = `<i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i> ${message}`;
+          setTimeout(() => {
+            formStatus.style.display = 'none';
+          }, 5000);
+        }
+      }
+
+      function showConfirmationModal(name, reference) {
+        const modalBody = document.getElementById('confirmationModalBody');
+        if (modalBody) {
+          modalBody.innerHTML = `
+            <div class="confirmation-message">
+              <i class="fas fa-check-circle" style="font-size: 4rem; color: #00c99c; margin-bottom: 1rem;"></i>
+              <h3>Thank You, ${escapeHtml(name)}!</h3>
+              <p>Your message has been received successfully. We'll get back to you within 24 hours.</p>
+              <div class="popia-notice">
+                <i class="fas fa-shield-alt"></i>
+                <p><strong>POPIA Compliance Notice:</strong></p>
+                <ul>
+                  <li>Your personal information will only be used to respond to your inquiry</li>
+                  <li>Your data will not be shared with third parties without your consent</li>
+                  <li>You may request access to or deletion of your data at any time</li>
+                </ul>
+                <p class="reference-note"><strong>Reference:</strong> #${reference}</p>
+              </div>
+            </div>
+          `;
+        }
+        if (confirmationModal) {
+          confirmationModal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      // Close confirmation modal
+      const closeConfirmation = document.querySelector('.close-confirmation');
+      const closeConfirmationBtn = document.querySelector('.close-confirmation-btn');
+
+      function closeConfirmationModal() {
+        if (confirmationModal) {
+          confirmationModal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      }
+
+      if (closeConfirmation) closeConfirmation.addEventListener('click', closeConfirmationModal);
+      if (closeConfirmationBtn) closeConfirmationBtn.addEventListener('click', closeConfirmationModal);
+      window.addEventListener('click', function(e) {
+        if (e.target === confirmationModal) closeConfirmationModal();
+      });
+
+      // Send contact form to backend API
+      if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+          e.preventDefault();
+
+          const name = document.getElementById('formName')?.value.trim();
+          const email = document.getElementById('formEmail')?.value.trim();
+          const phone = document.getElementById('formPhone')?.value.trim();
+          const inquiry = document.getElementById('formInquiry')?.value;
+          const message = document.getElementById('formMessage')?.value.trim();
+          const consent = document.getElementById('consent')?.checked;
+
+          // Validation
+          if (!name || !email || !message || !inquiry) {
+            showFormStatus('Please fill in all required fields.', 'error');
+            return false;
+          }
+
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            showFormStatus('Please enter a valid email address.', 'error');
+            return false;
+          }
+
+          if (!consent) {
+            showFormStatus('Please consent to our POPIA privacy policy to submit the form.', 'error');
+            return false;
+          }
+
+          // Prepare form data
+          const formData = {
+            name: name,
+            email: email,
+            phone: phone,
+            inquiryType: inquiry,
+            message: message,
+            consent: consent,
+            source: 'website_contact_form',
+            submittedAt: new Date().toISOString()
+          };
+
+          showLoading(true);
+          
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+          }
+
+          try {
+            // Send to backend API
+            const response = await fetch(`${API_URL}/contact/submit`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+              const reference = Math.floor(Math.random() * 100000);
+              showConfirmationModal(name, reference);
+              contactForm.reset();
+            } else {
+              throw new Error(result.message || 'Failed to send message');
+            }
+          } catch (error) {
+            console.error('Error sending message:', error);
+            
+            // Fallback: Store in localStorage if API fails
+            const pendingMessages = JSON.parse(localStorage.getItem('pending_contact_messages') || '[]');
+            pendingMessages.push({ ...formData, id: Date.now() });
+            localStorage.setItem('pending_contact_messages', JSON.stringify(pendingMessages));
+            
+            const reference = Math.floor(Math.random() * 100000);
+            showConfirmationModal(name, reference);
+            contactForm.reset();
+            showFormStatus('Message saved locally. We will process it when back online.', 'success');
+          } finally {
+            showLoading(false);
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+            }
+          }
+        });
+      }
+
+      // Process pending messages when back online
+      window.addEventListener('online', async function() {
+        const pendingMessages = JSON.parse(localStorage.getItem('pending_contact_messages') || '[]');
+        if (pendingMessages.length > 0) {
+          for (const message of pendingMessages) {
+            try {
+              await fetch(`${API_URL}/contact/submit`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(message)
+              });
+            } catch (error) {
+              console.error('Error sending pending message:', error);
+            }
+          }
+          localStorage.removeItem('pending_contact_messages');
+        }
+      });
+
+      // Add scroll effect to header
+      window.addEventListener('scroll', function() {
+        const header = document.getElementById('main-header');
+        if (header) {
+          if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        }
+      });
+    </script>
   </body>
 </html>
