@@ -6,18 +6,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
     />
-    <title>Tshwaranang Community Solution | DRIVE for Success</title>
+    <title>Contact Us | Tshwaranang Community Solution</title>
     <meta
       name="description"
-      content="Tshwaranang Community Solution is an NPO providing HIV prevention, treatment, and 1 Million HIV/TB Campaign for taxi operators and commuters in Tshwane."
+      content="Get in touch with Tshwaranang Community Solution for inquiries, partnerships, or to learn more about our services."
     />
 
-    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/whatsapp-float.css" />
-
-    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,10 +25,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/logo/icon.ico" />
@@ -39,10 +32,14 @@
     <link rel="apple-touch-icon" href="images/logo/logo.png" />
   </head>
   <body>
-    <!-- Floating WhatsApp Button -->
-    <div class="whatsapp-float" id="whatsapp-float"></div>
+    <!-- Floating WhatsApp Button - Same as homepage -->
+    <div class="whatsapp-float" id="whatsapp-float">
+      <a href="https://wa.me/27767354237" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+        <span class="whatsapp-text">Chat with us</span>
+      </a>
+    </div>
 
-    <!-- Header -->
     <header id="main-header">
       <div class="container header-container">
         <a href="index.html" class="logo">
@@ -61,10 +58,10 @@
           <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
           <li>
             <a href="#" class="btn-donate-nav" id="navDonateBtn"
               ><i class="fas fa-hand-holding-heart"></i> Donate</a
@@ -80,385 +77,199 @@
     </header>
 
     <main>
-      <!-- Hero Slideshow Section -->
-      <section class="hero-slider">
-        <div class="swiper heroSwiper">
-          <div class="swiper-wrapper" id="slideshowContainer"></div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </section>
-
-      <!-- Welcome Section -->
-      <section class="section-padding">
+      <section class="page-hero">
         <div class="container">
-          <div class="section-title">
-            <h2>Welcome to Tshwaranang Community Solution</h2>
-            <p>DRIVE for Success</p>
-          </div>
-          <div class="welcome-content">
-            <p class="welcome-text">
-              We are a registered Non-Profit Organisation dedicated to
-              transforming lives through accessible healthcare, climate action,
-              and community empowerment. Our focus is on Taxi Operators, Street
-              Vendors, and daily commuters across Tshwane's major taxi ranks.
+          <div class="page-hero-text">
+            <h1>Contact Us</h1>
+            <p>
+              Get in touch with us for inquiries, partnerships, or to learn more
+              about our services
             </p>
           </div>
+        </div>
+      </section>
 
-          <div class="stats-grid">
-            <div class="stat-card">
-              <i class="fas fa-users"></i>
-              <h3><span class="stat-number" data-target="15000">0</span>+</h3>
-              <p>Taxi Operators in Tshwane</p>
+      <section class="section-padding">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Contact Information Column -->
+            <div class="contact-info">
+              <h2>Get In Touch</h2>
+              <p>
+                Have questions or want to partner with us? We'd love to hear
+                from you.
+              </p>
+
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>13303 Extension 13, Soshanguve South, Pretoria, 0152</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>
+                    Xolani Nkosi: <a href="tel:+27655634365">065 563 4365</a>
+                  </p>
+                  <p>Phumi Phogole: <a href="tel:+27767354237">076 735 4237</a></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h3>Office Hours</h3>
+                  <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                  <p>Saturday: 9:00 AM - 1:00 PM</p>
+                  <p>Sunday: Closed</p>
+                </div>
+              </div>
+
+              <!-- Donate Button -->
+              <div class="donate-section">
+                <button class="btn-donate" id="donateBtn">
+                  <i class="fas fa-hand-holding-heart"></i> Support Our Cause
+                </button>
+              </div>
             </div>
-            <div class="stat-card">
-              <i class="fas fa-bus"></i>
-              <h3><span class="stat-number" data-target="121000">0</span>+</h3>
-              <p>Daily Commuters</p>
-            </div>
-            <div class="stat-card">
-              <i class="fas fa-heartbeat"></i>
-              <h3>1 Million</h3>
-              <p>Health Campaigns</p>
-            </div>
-            <div class="stat-card">
-              <i class="fas fa-hospital-user"></i>
-              <h3>5</h3>
-              <p>Major Taxi Ranks</p>
+
+            <!-- Contact Form Column -->
+            <div class="contact-form">
+              <h2>Send Us a Message</h2>
+              <div id="formStatus" class="form-status" style="display: none;"></div>
+              <form id="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    id="formName"
+                    placeholder="Your Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="formEmail"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="formPhone"
+                    placeholder="Your Phone Number"
+                  />
+                </div>
+                <div class="form-group">
+                  <select name="inquiry-type" id="formInquiry" required>
+                    <option value="">Select Inquiry Type</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="services">Services Information</option>
+                    <option value="donation">Donation/Support</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    id="formMessage"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group consent-checkbox">
+                  <input type="checkbox" id="consent" name="consent" required />
+                  <label for="consent"
+                    >I consent to Tshwaranang Community Solution collecting and
+                    processing my personal information in accordance with
+                    <a href="privacy.html" target="_blank">POPIA</a>.</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Core Values -->
+      <!-- Map Section -->
       <section class="section-padding bg-light">
         <div class="container">
           <div class="section-title">
-            <h2>Our Core Values</h2>
-            <p>The principles that guide everything we do</p>
+            <h2>Our Location</h2>
+            <p>Visit Phomelelong Wellness Clinic in Soshanguve</p>
           </div>
-          <div class="values-grid" id="valuesContainer"></div>
-        </div>
-      </section>
-
-      <!-- Vision & Mission -->
-      <section class="section-padding">
-        <div class="container">
-          <div class="vision-mission-preview">
-            <div class="vm-card">
-              <i class="fas fa-eye"></i>
-              <h3>Our Vision 2028</h3>
+          <div class="map-container">
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1q115153.89858441822!2d27.94062953195109!3d-25.586323756942868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfcff23f681b71%3A0xa08fab73ca87bbdc!2sPhomelelong%20Wellness%20Clinic!5e0!3m2!1sen!2sza!4v1774944135009!5m2!1sen!2sza"
+                width="100%"
+                height="400"
+                style="border: 0; border-radius: 16px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Phomelelong Wellness Clinic - Tshwaranang Community Solution Location"
+              >
+              </iframe>
+            </div>
+            <div class="map-info">
               <p>
-                To transform the Taxi Industry into a powerful engine for Health
-                and Climate Change Resilience by 2028, ensuring all major Taxi
-                Ranks in Tshwane are hubs for HIV Prevention, Treatment and
-                accessible care, with clean water banking, cooling areas, and
-                empowered workforce.
+                <i class="fas fa-map-marker-alt"></i> Phomelelong Wellness
+                Clinic, Soshanguve, Pretoria
               </p>
-            </div>
-            <div class="vm-card">
-              <i class="fas fa-bullseye"></i>
-              <h3>Our Mission</h3>
-              <p>
-                To provide accessible High quality HIV and Wellness services
-                directly to Taxi Operators, Street Vendors and daily commuters
-                through Fixed Walk-In Health Hubs at major Taxi Ranks:
-                Marabastad, Bosman, Bloedmall, Mabopane Interchange and
-                Donneboom Taxi.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==================== HEALTH CAMPAIGNS SECTION ==================== -->
-      <section class="section-padding health-campaigns-section">
-        <div class="container">
-          <div class="section-title">
-            <h2>Health Campaigns</h2>
-            <p>Driving wellness across Tshwane's taxi industry</p>
-          </div>
-          <div class="health-campaigns-layout">
-            <div class="campaign-feature-image">
-              <img
-                src="images/pictures/health campaigns.png"
-                alt="Tshwaranang Health Campaigns - HIV/TB prevention and care"
-                onerror="
-                  this.onerror = null;
-                  this.src =
-                    'https://placehold.co/800x500/1a7b4a/white?text=Health+Campaigns';
-                "
-              />
-            </div>
-            <div class="campaigns-content-grid">
-              <div class="campaign-highlight-card">
-                <i class="fas fa-people-arrows"></i>
-                <h3>1 Million HIV/TB Campaign</h3>
-                <p>
-                  Ambitious initiative reaching taxi operators, street vendors,
-                  and commuters with comprehensive prevention, testing, and
-                  linkage to care services across 5 major ranks.
-                </p>
-              </div>
-              <div class="campaign-highlight-card">
-                <i class="fas fa-hand-holding-medical"></i>
-                <h3>Stigma-Free Mobile Units</h3>
-                <p>
-                  Confidential wellness services delivered directly at taxi
-                  ranks, ensuring no driver or vendor is left behind in the
-                  fight against HIV and TB.
-                </p>
-              </div>
-              <div class="campaign-highlight-card">
-                <i class="fas fa-chalkboard-user"></i>
-                <h3>Health Education Drives</h3>
-                <p>
-                  Interactive workshops on prevention, treatment adherence, and
-                  healthy lifestyles tailored for the transport sector
-                  workforce.
-                </p>
-              </div>
-              <div class="campaign-highlight-card">
-                <i class="fas fa-calendar-check"></i>
-                <h3>Quarterly Wellness Weeks</h3>
-                <p>
-                  Intensified screening, ART distribution, and TB symptom
-                  screening events in partnership with Department of Health and
-                  Wits RHI.
-                </p>
+              <div class="map-buttons">
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Phomelelong+Wellness+Clinic+Soshanguve"
+                  target="_blank"
+                  class="btn btn-secondary"
+                >
+                  <i class="fas fa-directions"></i> Get Directions
+                </a>
+                <a
+                  href="https://www.google.com/maps/place/Phomelelong+Wellness+Clinic/@-25.5863238,27.9406295,15z/data=!4m6!3m5!1s0x1ebfcff23f681b71:0xa08fab73ca87bbdc!8m2!3d-25.5863238!4d27.9406295!16s%2Fg%2F11t7hx2wqf"
+                  target="_blank"
+                  class="btn btn-outline"
+                >
+                  <i class="fas fa-map"></i> Open in Google Maps
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ==================== TRANSFORMING LIVES SECTION ==================== -->
-      <section class="section-padding transforming-lives-section">
-        <div class="container">
-          <div class="section-title">
-            <h2>Transforming Lives</h2>
-            <p>Real impact stories & community upliftment</p>
-          </div>
-          <div class="transforming-lives-wrapper">
-            <div class="transforming-main-visual">
-              <img
-                src="images/pictures/transforming-lives.png"
-                alt="Transforming lives through healthcare and climate action"
-                onerror="
-                  this.onerror = null;
-                  this.src =
-                    'https://placehold.co/800x500/0e5a38/white?text=Transforming+Lives';
-                "
-              />
-            </div>
-            <div class="transforming-stories-grid">
-              <div class="story-card">
-                <div class="story-icon"><i class="fas fa-seedling"></i></div>
-                <h3>Greening Taxi Ranks</h3>
-                <p>
-                  Over 500 trees planted at major taxi ranks, improving air
-                  quality and creating cooling zones for commuters and vendors.
-                </p>
-              </div>
-              <div class="story-card">
-                <div class="story-icon"><i class="fas fa-chart-line"></i></div>
-                <h3>Economic Empowerment</h3>
-                <p>
-                  Skills training for 120+ street vendors in financial literacy
-                  and small business management, boosting household incomes.
-                </p>
-              </div>
-              <div class="story-card">
-                <div class="story-icon"><i class="fas fa-heartbeat"></i></div>
-                <h3>HIV-Positive Drivers Support</h3>
-                <p>
-                  Peer support groups for taxi drivers living with HIV, ensuring
-                  treatment adherence and reducing stigma within the industry.
-                </p>
-              </div>
-              <div class="story-card">
-                <div class="story-icon"><i class="fas fa-tint"></i></div>
-                <h3>Clean Water Access</h3>
-                <p>
-                  Installation of water stations at 3 taxi ranks, providing free
-                  clean drinking water to 8,000+ daily commuters.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Services Preview -->
-      <section class="section-padding">
-        <div class="container">
-          <div class="section-title">
-            <h2>Our Services</h2>
-            <p>Comprehensive health and wellness solutions</p>
-          </div>
-          <div class="services-grid-preview">
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
-              <h3>HIV Prevention & Care</h3>
-              <p>
-                HTS, HIV Prevention, Treatment and Care services with immediate
-                Linkage to Care.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-car"></i></div>
-              <h3>NaTIS & Roadworthy</h3>
-              <p>
-                Online booking for NaTIS and roadworthy services through
-                strategic partnerships.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-leaf"></i></div>
-              <h3>Climate Action</h3>
-              <p>
-                Tree distribution for household yards to improve air pollution
-                and revive vegetable gardens.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">
-                <i class="fas fa-graduation-cap"></i>
-              </div>
-              <h3>Training Programs</h3>
-              <p>M&E Training, QI Training, and Basic Nursing Training.</p>
-            </div>
-          </div>
-          <div class="text-center" style="margin-top: 40px">
-            <a href="services.html" class="btn btn-primary"
-              >View All Services</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Strategic Partners Slideshow -->
-      <!-- Strategic Partners Slideshow -->
-      <section class="section-padding partners-section">
-        <div class="container">
-          <div class="section-title">
-            <h2>Our Strategic Partners</h2>
-            <p>Working together for better outcomes</p>
-          </div>
-          <div class="partners-slider-container">
-            <div class="swiper partnersSwiper">
-              <div class="swiper-wrapper" id="partnersContainer"></div>
-              <div class="swiper-pagination partners-pagination"></div>
-              <div class="swiper-button-next partners-next"></div>
-              <div class="swiper-button-prev partners-prev"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Health Hub Locations -->
-      <section class="section-padding bg-light">
-        <div class="container">
-          <div class="section-title">
-            <h2>Our Health Hub Locations</h2>
-            <p>Fixed Walk-In Health Hubs at Major Taxi Ranks</p>
-          </div>
-          <div class="locations-grid">
-            <div class="location-card">
-              <div class="location-image">
-                <img
-                  src="images/health-hubs/Marabastad.png"
-                  alt="Marabastad Taxi Rank Health Hub"
-                  onerror="
-                    this.src =
-                      'https://placehold.co/400x300/1a7b4a/white?text=Marabastad+Taxi+Rank'
-                  "
-                />
-              </div>
-              <i class="fas fa-map-marker-alt"></i>
-              <h3>Marabastad Taxi Rank</h3>
-              <p>Walk-in Health Hub</p>
-            </div>
-            <div class="location-card">
-              <div class="location-image">
-                <img
-                  src="images/health-hubs/Bosman.png"
-                  alt="Bosman Taxi Rank Health Hub"
-                  onerror="
-                    this.src =
-                      'https://placehold.co/400x300/1a7b4a/white?text=Bosman+Taxi+Rank'
-                  "
-                />
-              </div>
-              <i class="fas fa-map-marker-alt"></i>
-              <h3>Bosman Taxi Rank</h3>
-              <p>Walk-in Health Hub</p>
-            </div>
-            <div class="location-card">
-              <div class="location-image">
-                <img
-                  src="images/health-hubs/Bloedmall.png"
-                  alt="Bloedmall Taxi Rank Health Hub"
-                  onerror="
-                    this.src =
-                      'https://placehold.co/400x300/1a7b4a/white?text=Bloedmall+Taxi+Rank'
-                  "
-                />
-              </div>
-              <i class="fas fa-map-marker-alt"></i>
-              <h3>Bloedmall Taxi Rank</h3>
-              <p>Walk-in Health Hub</p>
-            </div>
-            <div class="location-card">
-              <div class="location-image">
-                <img
-                  src="images/health-hubs/Mabopane.png"
-                  alt="Mabopane Interchange Health Hub"
-                  onerror="
-                    this.src =
-                      'https://placehold.co/400x300/1a7b4a/white?text=Mabopane+Interchange'
-                  "
-                />
-              </div>
-              <i class="fas fa-map-marker-alt"></i>
-              <h3>Mabopane Interchange</h3>
-              <p>Walk-in Health Hub</p>
-            </div>
-            <div class="location-card">
-              <div class="location-image">
-                <img
-                  src="images/health-hubs/Donneboom.png"
-                  alt="Donneboom Taxi Rank Health Hub"
-                  onerror="
-                    this.src =
-                      'https://placehold.co/400x300/1a7b4a/white?text=Donneboom+Taxi+Rank'
-                  "
-                />
-              </div>
-              <i class="fas fa-map-marker-alt"></i>
-              <h3>Donneboom Taxi Rank</h3>
-              <p>Walk-in Health Hub</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
+      <!-- CTA Section -->
       <section class="cta">
         <div class="container">
-          <h2>Join Us in Making a Difference</h2>
+          <h2>Want to Support Our Cause?</h2>
           <p>
-            Together we can reach 1 Million people with HIV/TB prevention,
-            treatment, and care, while transforming the Taxi Industry into a
-            powerful engine for Health and Climate Change Resilience.
+            Your donation helps us continue our mission of providing quality
+            healthcare and climate action initiatives.
           </p>
-          <a href="contact.html" class="btn btn-secondary">Contact Us Today</a>
+          <button
+            id="ctaDonateBtn"
+            class="btn btn-secondary"
+            style="background: white; color: #1a7b4a"
+          >
+            Make a Donation
+          </button>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer id="main-footer">
       <div class="container">
         <div class="footer-grid">
@@ -479,6 +290,7 @@
               <li><a href="services.html">Services</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="contact.html">Contact</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -489,9 +301,11 @@
                 Soshanguve, Pretoria, 0152
               </li>
               <li>
+                <i class="fas fa-phone-alt"></i> Xolani Nkosi: 065 563 4365
+              </li>
+              <li>
                 <i class="fas fa-phone-alt"></i> Phumi Phogole: 076 735 4237
               </li>
-             
             </ul>
           </div>
         </div>
@@ -522,23 +336,28 @@
         <div class="modal-body">
           <div class="bank-details">
             <div class="bank-detail-item">
-              <strong>Bank Name:</strong><span>First National Bank (FNB)</span>
+              <strong>Bank Name:</strong>
+              <span>First National Bank (FNB)</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Account Holder:</strong
-              ><span>Tshwaranang Community Solution</span>
+              <strong>Account Holder:</strong>
+              <span>Tshwaranang Community Solution</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Account Number:</strong><span>631 982 834 93</span>
+              <strong>Account Number:</strong>
+              <span>631 982 834 93</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Branch Code:</strong><span>250655</span>
+              <strong>Branch Code:</strong>
+              <span>250655</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Account Type:</strong><span>Cheque Account</span>
+              <strong>Account Type:</strong>
+              <span>Cheque Account</span>
             </div>
             <div class="bank-detail-item">
-              <strong>Reference:</strong><span>Donation - [Your Name]</span>
+              <strong>Reference:</strong>
+              <span>Donation - [Your Name]</span>
             </div>
           </div>
           <div class="donation-note">
@@ -558,156 +377,151 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/config.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal confirmation-modal">
+      <div class="modal-content confirmation-content">
+        <div class="modal-header confirmation-header">
+          <h3><i class="fas fa-check-circle"></i> Thank You!</h3>
+          <span class="close-confirmation">&times;</span>
+        </div>
+        <div class="modal-body" id="confirmationModalBody"></div>
+        <div class="modal-actions confirmation-actions">
+          <button class="btn btn-primary close-confirmation-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Modal -->
+    <div id="loadingModal" class="modal loading-modal">
+      <div class="modal-content loading-content">
+        <div class="loading-spinner"></div>
+        <p>Sending your message...</p>
+      </div>
+    </div>
 
     <style>
-      /* Health Campaigns Section */
-      .health-campaigns-section {
-        background: linear-gradient(135deg, #f0f9f4 0%, #e6f3ec 100%);
-      }
-      .health-campaigns-layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        align-items: center;
-      }
-      .campaign-feature-image {
-        border-radius: 32px;
-        overflow: hidden;
-        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-      }
-      .campaign-feature-image:hover {
-        transform: scale(1.01);
-      }
-      .campaign-feature-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-      }
-      .campaigns-content-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-      }
-      .campaign-highlight-card {
-        background: white;
-        border-radius: 24px;
-        padding: 1.5rem;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s ease;
-      }
-      .campaign-highlight-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-      }
-      .campaign-highlight-card i {
-        font-size: 2.2rem;
-        color: #1a7b4a;
-        margin-bottom: 1rem;
-        display: inline-block;
-      }
-      .campaign-highlight-card h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.75rem;
-        color: #0e5a38;
-      }
-      .campaign-highlight-card p {
-        color: #4a5568;
-        line-height: 1.5;
+      .btn-donate-nav {
+        background: linear-gradient(135deg, #ff8c42, #ff6b35);
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 50px;
         font-size: 0.9rem;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        text-decoration: none;
       }
 
-      /* Transforming Lives Section */
-      .transforming-lives-section {
-        background: linear-gradient(135deg, #fff9ef 0%, #fef5e6 100%);
+      .btn-donate-nav:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+        color: white;
       }
-      .transforming-lives-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
+
+      .contact-info h2 {
+        color: #0e5a38 !important;
+        font-size: 1.8rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 1rem !important;
+      }
+
+      .contact-info p {
+        color: #6c757d !important;
+        margin-bottom: 2rem !important;
+      }
+
+      .info-item h3 {
+        color: #0e5a38 !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+      }
+
+      .info-item p,
+      .info-item a {
+        color: #6c757d !important;
+      }
+
+      .info-item a:hover {
+        color: #1a7b4a !important;
+      }
+
+      .donate-section {
+        margin: 30px 0 20px;
+        padding-top: 20px;
+        border-top: 1px solid #e9ecef;
+      }
+
+      .btn-donate {
+        display: inline-flex;
         align-items: center;
-      }
-      .transforming-main-visual {
-        border-radius: 32px;
-        overflow: hidden;
-        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-        order: 2;
-      }
-      .transforming-main-visual img {
+        gap: 10px;
+        background: linear-gradient(135deg, #ff8c42, #ff6b35);
+        color: white;
+        border: none;
+        padding: 14px 28px;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
         width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
+        justify-content: center;
       }
-      .transforming-stories-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+
+      .btn-donate:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
       }
-      .story-card {
+
+      .map-container {
         background: white;
         border-radius: 24px;
-        padding: 1.5rem;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s ease;
+        padding: 20px;
+        box-shadow: var(--shadow);
+      }
+
+      .map-embed {
+        margin-bottom: 20px;
+        border-radius: 16px;
+        overflow: hidden;
+      }
+
+      .map-info {
         text-align: center;
       }
-      .story-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-      }
-      .story-icon i {
-        font-size: 2rem;
-        color: #ff8c42;
-        background: rgba(255, 140, 66, 0.1);
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-        border-radius: 60px;
-        margin-bottom: 1rem;
-      }
-      .story-card h3 {
-        font-size: 1.15rem;
-        margin-bottom: 0.75rem;
-        color: #2d3748;
-      }
-      .story-card p {
-        color: #4a5568;
-        line-height: 1.5;
-        font-size: 0.9rem;
+
+      .map-info p {
+        margin-bottom: 15px;
+        color: #6c757d;
       }
 
-      /* Responsive */
-      @media (max-width: 992px) {
-        .health-campaigns-layout,
-        .transforming-lives-wrapper {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-        }
-        .transforming-main-visual {
-          order: 1;
-        }
-        .campaigns-content-grid,
-        .transforming-stories-grid {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      @media (max-width: 640px) {
-        .campaigns-content-grid,
-        .transforming-stories-grid {
-          grid-template-columns: 1fr;
-        }
-        .campaign-highlight-card,
-        .story-card {
-          padding: 1.2rem;
-        }
+      .map-info p i {
+        color: #1a7b4a;
+        margin-right: 8px;
       }
 
-      /* Existing modal and partner styles kept */
+      .map-buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn-outline {
+        background: transparent;
+        border: 2px solid #1a7b4a;
+        color: #1a7b4a;
+      }
+
+      .btn-outline:hover {
+        background: #1a7b4a;
+        color: white;
+      }
+
       .modal {
         display: none;
         position: fixed;
@@ -721,6 +535,7 @@
         justify-content: center;
         backdrop-filter: blur(5px);
       }
+
       .modal-content {
         background: white;
         border-radius: 24px;
@@ -730,6 +545,7 @@
         overflow-y: auto;
         animation: modalSlideIn 0.3s ease;
       }
+
       @keyframes modalSlideIn {
         from {
           opacity: 0;
@@ -740,16 +556,24 @@
           transform: translateY(0);
         }
       }
+
       .modal-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px 25px;
+        border-bottom: 1px solid #e9ecef;
         background: linear-gradient(135deg, #1a7b4a, #0e5a38);
         border-radius: 24px 24px 0 0;
         color: white;
       }
-      .close-modal {
+
+      .modal-header h3 {
+        margin: 0;
+        color: white;
+      }
+      .close-modal,
+      .close-confirmation {
         font-size: 28px;
         cursor: pointer;
         color: white;
@@ -757,206 +581,433 @@
       .modal-body {
         padding: 25px;
       }
+
       .bank-details {
         background: #f8f9fa;
         border-radius: 16px;
         padding: 20px;
         margin-bottom: 20px;
       }
+
       .bank-detail-item {
         display: flex;
         justify-content: space-between;
         padding: 10px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
       }
-      .btn-donate-nav {
-        background: linear-gradient(135deg, #ff8c42, #ff6b35);
-        color: white;
-        border: none;
-        padding: 8px 20px;
-        border-radius: 50px;
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        text-decoration: none;
+      .bank-detail-item:last-child {
+        border-bottom: none;
       }
-      .partners-section {
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      .bank-detail-item strong {
+        color: #0e5a38;
       }
-      .partners-slider-container {
-        padding: 20px 40px;
+      .bank-detail-item span {
+        color: #6c757d;
       }
-      .partner-card-slide {
-        background: white;
-        border-radius: 20px;
-        padding: 25px 20px;
+
+      .donation-note {
+        background: rgba(26, 123, 74, 0.1);
+        border-radius: 12px;
+        padding: 15px;
+        display: flex;
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+      .donation-note i {
+        font-size: 1.5rem;
+        color: #1a7b4a;
+      }
+      .donation-note p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #6c757d;
+        line-height: 1.5;
+      }
+
+      .modal-actions {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      .modal-actions .btn {
+        flex: 1;
         text-align: center;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
       }
-      .partner-logo {
-        width: 120px;
-        height: 100px;
+
+      .confirmation-header {
+        background: linear-gradient(135deg, #00c99c, #00b087);
+      }
+      .confirmation-message {
+        text-align: center;
+      }
+      .confirmation-message h3 {
+        color: #0e5a38;
+        margin-bottom: 1rem;
+      }
+      .confirmation-message p {
+        color: #6c757d;
+        margin-bottom: 1.5rem;
+      }
+
+      .popia-notice {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 1.2rem;
+        text-align: left;
+        margin-top: 1rem;
+      }
+      .popia-notice i {
+        color: #1a7b4a;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+      .popia-notice ul {
+        margin-left: 1.2rem;
+        margin-top: 0.5rem;
+      }
+      .popia-notice li {
+        color: #6c757d;
+        margin-bottom: 0.3rem;
+        font-size: 0.85rem;
+      }
+      .reference-note {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        color: #1a7b4a;
+      }
+      .confirmation-actions {
+        padding: 0 25px 25px 25px;
+      }
+
+      /* Loading Modal */
+      .loading-content {
+        text-align: center;
+        padding: 30px;
+        max-width: 300px;
+      }
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #e9ecef;
+        border-top-color: #1a7b4a;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
         margin: 0 auto 20px;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      /* Form Status */
+      .form-status {
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin-bottom: 20px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        gap: 10px;
       }
-      .partner-logo img {
-        max-width: 100%;
-        max-height: 80px;
-        object-fit: contain;
+      .form-status.success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
       }
-      .locations-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
+      .form-status.error {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
       }
-      .location-card {
-        text-align: center;
-        padding: 1.8rem;
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+      /* WhatsApp Float Button - Same as homepage */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
       }
-      .campaign-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
+      .whatsapp-link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: #25D366;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        transition: all 0.3s ease;
+      }
+      .whatsapp-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        color: white;
+      }
+      .whatsapp-icon {
+        font-size: 28px;
+      }
+      .whatsapp-text {
+        font-size: 14px;
       }
       @media (max-width: 768px) {
-        .partners-slider-container {
-          padding: 20px 10px;
+        .whatsapp-float {
+          bottom: 20px;
+          right: 20px;
         }
-        .partner-logo {
-          width: 100px;
-          height: 80px;
+        .whatsapp-link {
+          padding: 10px 16px;
+        }
+        .whatsapp-text {
+          display: none;
+        }
+        .whatsapp-icon {
+          font-size: 28px;
+          margin: 0;
+        }
+        .whatsapp-link {
+          padding: 12px;
+          border-radius: 50%;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .contact-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+      @media (max-width: 768px) {
+        .map-buttons {
+          flex-direction: column;
+        }
+        .map-buttons .btn {
+          width: 100%;
+        }
+      }
+      @media (max-width: 576px) {
+        .modal-actions {
+          flex-direction: column;
+        }
+        .bank-detail-item {
+          flex-direction: column;
+          gap: 5px;
+        }
+        .btn-donate {
+          padding: 12px 20px;
+          font-size: 0.9rem;
+        }
+        .contact-info h2 {
+          font-size: 1.5rem !important;
         }
       }
     </style>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // ===== FIX: Initialize the hero slideshow =====
-        if (typeof initSlideshow !== "undefined") {
-          initSlideshow(); // ← ADDED - This loads your slide images
-        }
+      // Set current year in footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        const navDonateBtn = document.getElementById("navDonateBtn");
-        const modal = document.getElementById("bankDetailsModal");
-        const closeModal = document.querySelector(".close-modal");
-        const copyDetailsBtn = document.getElementById("copyDetailsBtn");
-        function openDonateModal(e) {
-          if (e) e.preventDefault();
-          if (modal) {
-            modal.style.display = "flex";
-            document.body.style.overflow = "hidden";
+      // Mobile menu toggle
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      }
+
+      // Donate Modal functionality
+      const donateBtn = document.getElementById('donateBtn');
+      const navDonateBtn = document.getElementById('navDonateBtn');
+      const ctaDonateBtn = document.getElementById('ctaDonateBtn');
+      const modal = document.getElementById('bankDetailsModal');
+      const closeModal = document.querySelector('.close-modal');
+      const copyDetailsBtn = document.getElementById('copyDetailsBtn');
+
+      function openDonateModal(e) {
+        if (e) e.preventDefault();
+        if (modal) {
+          modal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      if (donateBtn) donateBtn.addEventListener('click', openDonateModal);
+      if (navDonateBtn) navDonateBtn.addEventListener('click', openDonateModal);
+      if (ctaDonateBtn) ctaDonateBtn.addEventListener('click', openDonateModal);
+
+      if (closeModal) {
+        closeModal.addEventListener('click', function() {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        });
+      }
+
+      window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
+
+      // Copy bank details
+      if (copyDetailsBtn) {
+        copyDetailsBtn.addEventListener('click', function() {
+          const bankDetailsText = `Bank Name: First National Bank (FNB)\nAccount Holder: Tshwaranang Community Solution\nAccount Number: 631 982 834 93\nBranch Code: 250655\nAccount Type: Cheque Account\nReference: Donation - [Your Name]`;
+          navigator.clipboard.writeText(bankDetailsText).then(() => {
+            const originalText = copyDetailsBtn.innerHTML;
+            copyDetailsBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            setTimeout(() => {
+              copyDetailsBtn.innerHTML = originalText;
+            }, 2000);
+          }).catch(() => {
+            alert('Could not copy. Please manually copy the details.');
+          });
+        });
+      }
+
+      // Contact Form Handler
+      const contactForm = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const loadingModal = document.getElementById('loadingModal');
+      const confirmationModal = document.getElementById('confirmationModal');
+      const formStatus = document.getElementById('formStatus');
+
+      function showLoading(show) {
+        if (loadingModal) {
+          if (show) {
+            loadingModal.style.display = 'flex';
+          } else {
+            loadingModal.style.display = 'none';
           }
         }
-        if (navDonateBtn)
-          navDonateBtn.addEventListener("click", openDonateModal);
-        if (closeModal)
-          closeModal.addEventListener("click", function () {
-            modal.style.display = "none";
-            document.body.style.overflow = "auto";
-          });
-        window.addEventListener("click", function (e) {
-          if (e.target === modal) {
-            modal.style.display = "none";
-            document.body.style.overflow = "auto";
+      }
+
+      function showFormStatus(message, type) {
+        if (formStatus) {
+          formStatus.style.display = 'flex';
+          formStatus.className = `form-status ${type}`;
+          formStatus.innerHTML = `<i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i> ${message}`;
+          setTimeout(() => {
+            formStatus.style.display = 'none';
+          }, 5000);
+        }
+      }
+
+      function showConfirmationModal(name, reference) {
+        const modalBody = document.getElementById('confirmationModalBody');
+        if (modalBody) {
+          modalBody.innerHTML = `
+            <div class="confirmation-message">
+              <i class="fas fa-check-circle" style="font-size: 4rem; color: #00c99c; margin-bottom: 1rem;"></i>
+              <h3>Thank You, ${escapeHtml(name)}!</h3>
+              <p>Your message has been received successfully. We'll get back to you within 24 hours.</p>
+              <div class="popia-notice">
+                <i class="fas fa-shield-alt"></i>
+                <p><strong>POPIA Compliance Notice:</strong></p>
+                <ul>
+                  <li>Your personal information will only be used to respond to your inquiry</li>
+                  <li>Your data will not be shared with third parties without your consent</li>
+                  <li>You may request access to or deletion of your data at any time</li>
+                </ul>
+                <p class="reference-note"><strong>Reference:</strong> #${reference}</p>
+              </div>
+            </div>
+          `;
+        }
+        if (confirmationModal) {
+          confirmationModal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      // Close confirmation modal
+      const closeConfirmation = document.querySelector('.close-confirmation');
+      const closeConfirmationBtn = document.querySelector('.close-confirmation-btn');
+
+      function closeConfirmationModal() {
+        if (confirmationModal) {
+          confirmationModal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      }
+
+      if (closeConfirmation) closeConfirmation.addEventListener('click', closeConfirmationModal);
+      if (closeConfirmationBtn) closeConfirmationBtn.addEventListener('click', closeConfirmationModal);
+      window.addEventListener('click', function(e) {
+        if (e.target === confirmationModal) closeConfirmationModal();
+      });
+
+      // Send contact form
+      if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+          e.preventDefault();
+
+          const name = document.getElementById('formName')?.value.trim();
+          const email = document.getElementById('formEmail')?.value.trim();
+          const phone = document.getElementById('formPhone')?.value.trim();
+          const inquiry = document.getElementById('formInquiry')?.value;
+          const message = document.getElementById('formMessage')?.value.trim();
+          const consent = document.getElementById('consent')?.checked;
+
+          if (!name || !email || !message || !inquiry) {
+            showFormStatus('Please fill in all required fields.', 'error');
+            return false;
+          }
+
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            showFormStatus('Please enter a valid email address.', 'error');
+            return false;
+          }
+
+          if (!consent) {
+            showFormStatus('Please consent to our POPIA privacy policy to submit the form.', 'error');
+            return false;
+          }
+
+          showLoading(true);
+          
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+          }
+
+          try {
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            const reference = Math.floor(Math.random() * 100000);
+            showConfirmationModal(name, reference);
+            contactForm.reset();
+            showFormStatus('Message sent successfully!', 'success');
+          } catch (error) {
+            console.error('Error sending message:', error);
+            showFormStatus('Failed to send message. Please try again.', 'error');
+          } finally {
+            showLoading(false);
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+            }
           }
         });
-        if (copyDetailsBtn) {
-          copyDetailsBtn.addEventListener("click", function () {
-            const details = `Bank Name: First National Bank (FNB)\nAccount Holder: Tshwaranang Community Solution\nAccount Number: 63198283493\nBranch Code: 250655\nAccount Type: Cheque Account\nReference: Donation - [Your Name]`;
-            navigator.clipboard
-              .writeText(details)
-              .then(() => {
-                const orig = copyDetailsBtn.innerHTML;
-                copyDetailsBtn.innerHTML =
-                  '<i class="fas fa-check"></i> Copied!';
-                setTimeout(() => {
-                  copyDetailsBtn.innerHTML = orig;
-                }, 2000);
-              })
-              .catch(() => alert("Could not copy."));
-          });
-        }
-        const partners = [
-          {
-            name: "DEKRA",
-            logo: "partners/DEKRA.png",
-            description: "Online Roadworthy Booking Partner",
-          },
-          {
-            name: "Department of Transport",
-            logo: "partners/Department of Transport.png",
-            description: "Strategic Alliance",
-          },
-          {
-            name: "DTI",
-            logo: "partners/DTI.png",
-            description: "Strategic Business Support",
-          },
-          {
-            name: "RTMC",
-            logo: "partners/rtmc-logo.png",
-            description: "Road Traffic Management Corporation",
-          },
-          {
-            name: "SANTACO",
-            logo: "partners/SANTACO.png",
-            description: "Gauteng PEC Partnership",
-          },
-          {
-            name: "Wits RHI",
-            logo: "partners/Wits RHI.png",
-            description: "Gophelega Project Collaboration",
-          },
-        ];
-        const partnersContainer = document.getElementById("partnersContainer");
-        if (partnersContainer) {
-          partnersContainer.innerHTML = partners
-            .map(
-              (p) =>
-                `<div class="swiper-slide partner-slide"><div class="partner-card-slide"><div class="partner-logo"><img src="${p.logo}" alt="${p.name}" onerror="this.src='https://placehold.co/200x150/1a7b4a/white?text=${p.name}'"></div><div class="partner-info"><h3>${p.name}</h3><p>${p.description}</p></div></div></div>`,
-            )
-            .join("");
-        }
-        if (typeof Swiper !== "undefined") {
-          new Swiper(".partnersSwiper", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            autoplay: { delay: 4000, disableOnInteraction: false },
-            pagination: { el: ".partners-pagination", clickable: true },
-            navigation: { nextEl: ".partners-next", prevEl: ".partners-prev" },
-            breakpoints: {
-              640: { slidesPerView: 2 },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 4 },
-            },
-          });
+      }
 
-          // ===== FIX: Initialize the hero swiper AFTER slides are loaded =====
-          setTimeout(function () {
-            if (document.querySelector(".heroSwiper")) {
-              new Swiper(".heroSwiper", {
-                loop: true,
-                autoplay: { delay: 5000, disableOnInteraction: false },
-                pagination: { el: ".swiper-pagination", clickable: true },
-                navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                },
-                effect: "fade",
-                fadeEffect: { crossFade: true },
-              });
-            }
-          }, 200); // ← ADDED - This starts the slideshow
+      // Add scroll effect to header
+      window.addEventListener('scroll', function() {
+        const header = document.getElementById('main-header');
+        if (header) {
+          if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
         }
-        document.getElementById("currentYear").innerText =
-          new Date().getFullYear();
       });
     </script>
   </body>
